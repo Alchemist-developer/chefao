@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const BodyContainer = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
+    justify-content: center;
     align-items: center;
-`
+`;
