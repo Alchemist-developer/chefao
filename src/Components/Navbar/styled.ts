@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Navbar } from "react-bootstrap";
 
 export const SpanNavbar = styled.span`
   font-size: 24px;
@@ -11,3 +12,7 @@ export const LinkNavbar = styled.span`
   font-size: 16px;
   color: #6033aa;
 `;
+
+export const NavbarComponent = styled(Navbar)`
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+`
