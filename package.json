@@ -1,0 +1,35 @@
+{
+  "name": "rede-social-parrot",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   Hands On Week 4, Gama Experience #41: Rede Social Parrot.\r </p><br/>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alchemist-developer/rede-social-parrot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alchemist-developer/rede-social-parrot/issues"
+  },
+  "homepage": "https://github.com/Alchemist-developer/rede-social-parrot#readme",
+  "dependencies": {
+    "@types/sequelize": "^4.28.13",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-jwt": "^7.7.5",
+    "express-validation": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.20.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.2.0",
+    "nodemon": "^2.0.16",
+    "sequelize-cli": "^6.4.1"
+  }
+}
