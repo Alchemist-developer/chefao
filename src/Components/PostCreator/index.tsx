@@ -4,12 +4,12 @@ import Icon from "/src/assets/icon.png";
 
 const PostCreator: React.FC = () => {
   return (
-    <div className="containerProfile">
-      <div className="userContent">
+    <div className="containerPostCreator">
+      <div className="postCreator">
         <img src={Icon} alt="" />
         <form>
           <textarea name="" id=""></textarea>
-          <button>publicar</button>
+          <button type="button">publicar</button>
         </form>
       </div>
     </div>
