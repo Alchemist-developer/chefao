@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
+import FormRegister from '../../components/FormRegister';
 
 
 const Register: React.FC = () => {
   return (
-    <Navbar/>
+    <FormRegister />
   );
 }
 
