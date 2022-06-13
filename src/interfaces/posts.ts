@@ -6,5 +6,5 @@ const api = axios.create({
 });
 
 export const renderPosts = (): Promise<Post[]> => {
- return api.get<Post[]>("/feed").then(response => response.data);
+ return api.get<Post[]>("/posts").then(response => response.data);
 }
