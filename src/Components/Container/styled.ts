@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
+
 export const BodyContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
+    max-width: 100%;
+    height: 75vh;
     display: flex;
     flex-direction: column
     justify-content: center;
