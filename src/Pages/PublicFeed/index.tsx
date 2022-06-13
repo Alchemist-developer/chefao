@@ -1,16 +1,21 @@
-import React from "react";
-import Navbar from "../../components/Navbar";
-import PostFeed from "../../components/PostFeed";
+import React from 'react';
+import { BodyContainer } from '../../components/Container/styled';
+import FeedContainer from '../../components/FeedContainer';
+import Navbar from '../../components/Navbar';
 
-// import { Container } from './styles';
+
 
 const PublicFeed: React.FC = () => {
   return (
-    <div>
-      <Navbar />
-      <PostFeed />
-    </div>
+  <div>
+  <Navbar />
+  <BodyContainer>  
+ <FeedContainer>
+
+ </FeedContainer>
+</BodyContainer>
+</div>
   );
-};
+}
 
 export default PublicFeed;

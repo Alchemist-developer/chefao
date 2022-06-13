@@ -7,15 +7,13 @@ const Header: React.FC = () => {
   return (
     <S.NavbarComponent>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={Logo} width="245" alt="Parrot Logo" />
         </Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
           <div>
             <S.SpanNavbar className="pe-3">Olá, usuário</S.SpanNavbar>
-            <S.LinkNavbar href="#" className="ps-3">
-              sair
-            </S.LinkNavbar>
+            <S.LinkNavbar href="" className="ps-3">sair</S.LinkNavbar>
           </div>
         </Navbar.Collapse>
       </Container>
