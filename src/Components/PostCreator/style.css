@@ -40,11 +40,11 @@ form {
 }
 
 textarea {
+    resize: none !important;
     width: 542px;
     height: 96px;
     border: 1px solid #8DC44D;
     border-radius: 10px;
-    resize: none;
 }
 
 button {
