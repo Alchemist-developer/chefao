@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Navbar } from "react-bootstrap";
 import Logo from "../../assets/logo-horizontal-colorido.png";
-import * as S from "./styled"
+import * as S from "./styled";
 
 const Header: React.FC = () => {
   return (
@@ -13,7 +13,9 @@ const Header: React.FC = () => {
         <Navbar.Collapse className="justify-content-end">
           <div>
             <S.SpanNavbar className="pe-3">Olá, usuário</S.SpanNavbar>
-            <S.LinkNavbar href="#" className="ps-3">sair</S.LinkNavbar>
+            <S.LinkNavbar href="#" className="ps-3">
+              sair
+            </S.LinkNavbar>
           </div>
         </Navbar.Collapse>
       </Container>
