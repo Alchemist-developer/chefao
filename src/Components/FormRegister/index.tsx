@@ -3,7 +3,7 @@ import { Button, Form, Alert } from "react-bootstrap";
 import "./style.css";
 import Logo from "../../assets/logo-colorido.png";
 import { User } from "../../types";
-import {useFormik} from 'formik';
+import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object({
@@ -21,12 +21,12 @@ interface FormRegisterProps {
 }
 
 
-const FormRegister: React.FC<FormRegisterProps> = ({createUser}) => {
+const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
 
   const formik = useFormik({
     initialValues: {
       nome: '',
-      email:'',
+      email: '',
       senha: '',
       confirmarSenha: '',
       apartamento: '',
@@ -49,50 +49,52 @@ const FormRegister: React.FC<FormRegisterProps> = ({createUser}) => {
     <div className="background">
       <div className="containerForm">
         <div className="divImage">
-        <img src={Logo} alt="" />
+          <img src={Logo} alt="" />
         </div>
         <h3>CADASTRO</h3>
         <Form className="form" onSubmit={formik.handleSubmit}>
           <Form.Group className="mb-1">
-            <Form.Control id="nome" type="text" placeholder="nome" value={formik.values.nome} onChange={formik.handleChange} isInvalid={formik.touched.nome && !!formik.errors.nome} isValid={formik.touched.nome &&!formik.errors.nome}/>
+            <Form.Control id="nome" type="text" placeholder="nome" value={formik.values.nome} onChange={formik.handleChange} isInvalid={formik.touched.nome && !!formik.errors.nome} isValid={formik.touched.nome && !formik.errors.nome} />
           </Form.Group>
           <Form.Group className="mb-1">
-            <Form.Control id="email" type="email" placeholder="email" value={formik.values.email} onChange={formik.handleChange} isInvalid={formik.touched.email && !!formik.errors.email} isValid={formik.touched.email &&!formik.errors.email}/>
+            <Form.Control id="email" type="email" placeholder="email" value={formik.values.email} onChange={formik.handleChange} isInvalid={formik.touched.email && !!formik.errors.email} isValid={formik.touched.email && !formik.errors.email} />
           </Form.Group>
           <Form.Group className="mb-1" >
-            <Form.Control id="senha" type="password" placeholder="senha" value={formik.values.senha} onChange={formik.handleChange} isInvalid={formik.touched.senha && !!formik.errors.senha} isValid={formik.touched.senha &&!formik.errors.senha}/>
+            <Form.Control id="senha" type="password" placeholder="senha" value={formik.values.senha} onChange={formik.handleChange} isInvalid={formik.touched.senha && !!formik.errors.senha} isValid={formik.touched.senha && !formik.errors.senha} />
           </Form.Group>
           <Form.Group className="mb-1" >
-            <Form.Control id="confirmarSenha" type="password" 
-            value={formik.values.confirmarSenha} onChange={formik.handleChange} placeholder="confirmar senha" isInvalid={formik.touched.confirmarSenha && !!formik.errors.confirmarSenha} isValid={formik.touched.confirmarSenha &&!formik.errors.confirmarSenha} />
+            <Form.Control id="confirmarSenha" type="password"
+              value={formik.values.confirmarSenha} onChange={formik.handleChange} placeholder="confirmar senha" isInvalid={formik.touched.confirmarSenha && !!formik.errors.confirmarSenha} isValid={formik.touched.confirmarSenha && !formik.errors.confirmarSenha} />
           </Form.Group>
           <Form.Group className="mb-1" >
-            <Form.Control id="apartamento" type="text" placeholder="unidade/apartamento" value={formik.values.apartamento} onChange={formik.handleChange} isInvalid={formik.touched.apartamento && !!formik.errors.apartamento} isValid={formik.touched.apartamento &&!formik.errors.apartamento}/>
+            <Form.Control id="apartamento" type="text" placeholder="unidade/apartamento" value={formik.values.apartamento} onChange={formik.handleChange} isInvalid={formik.touched.apartamento && !!formik.errors.apartamento} isValid={formik.touched.apartamento && !formik.errors.apartamento} />
           </Form.Group>
           <Form.Group className="mb-1" >
-            <Form.Control id="imagem" type="text" placeholder="link da foto" value={formik.values.imagem} onChange={formik.handleChange} isInvalid={formik.touched.imagem && !!formik.errors.imagem} isValid={formik.touched.imagem &&!formik.errors.imagem}/>
+            <Form.Control id="imagem" type="text" placeholder="link da foto" value={formik.values.imagem} onChange={formik.handleChange} isInvalid={formik.touched.imagem && !!formik.errors.imagem} isValid={formik.touched.imagem && !formik.errors.imagem} />
           </Form.Group>
           <Button variant="primary" type="submit">
             entrar
           </Button>
-          {formik.errors.email && formik.touched.email 
-          && ( 
-            <Alert style={{marginTop: 15}} variant="danger">
-              {formik.errors.email}
-            </Alert> 
-          )}
-        {formik.errors.senha && formik.touched.senha 
-          && ( 
-            <Alert style={{marginTop: 15}} variant="danger">
-              {formik.errors.senha}
-            </Alert> 
-          )}
-          {formik.errors.confirmarSenha && formik.touched.confirmarSenha 
-          && ( 
-            <Alert style={{marginTop: 15}} variant="danger">
-              {formik.errors.confirmarSenha}
-            </Alert> 
-          )}
+          {formik.errors.email && formik.touched.email
+            && (
+              <Alert style={{ marginTop: 15 }} variant="danger">
+                {formik.errors.email}
+              </Alert>
+            )}
+          {formik.errors.senha && formik.touched.senha
+            && (
+              <Alert style={{ marginTop: 15 }} variant="danger">
+                {formik.errors.senha}
+              </Alert>
+            )}
+          {formik.errors.confirmarSenha && formik.touched.confirmarSenha
+            && (
+              <Alert style={{ marginTop: 15 }} variant="danger">
+                {formik.errors.confirmarSenha}
+              </Alert>
+            )}
+          <div>
+            <a className="" href="/">Voltar</a></div>
         </Form>
       </div>
     </div>
