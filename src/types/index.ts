@@ -12,6 +12,7 @@ export interface User {
     nome: string,
     email: string,
     senha: string,
+    confirmarSenha: string,
     apartamento: string,
     imagem: string
 }
