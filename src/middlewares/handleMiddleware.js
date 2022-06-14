@@ -1,4 +1,4 @@
-//import { NextFunction, Request, Response} from "express";
+import { NextFunction, Request, Response} from "express";
 import { ValidationError } from "express-validation";
 
 module.exports = (error, req, res, next) => {
@@ -8,5 +8,3 @@ module.exports = (error, req, res, next) => {
 
    return res.status(500).json(error);
 };
-
-//incompleto - ver expressjwt
