@@ -14,6 +14,7 @@ const Users = db.define (
       type: DataTypes.STRING
     },
     email: {
+      allowNull: false,
       type: DataTypes.STRING
     },
     apartment: {
