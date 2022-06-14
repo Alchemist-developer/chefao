@@ -52,7 +52,7 @@ const FormRegister: React.FC<FormRegisterProps> = ({createUser}) => {
         <img src={Logo} alt="" />
         </div>
         <h3>CADASTRO</h3>
-        <Form className="registerForm" onSubmit={formik.handleSubmit}>
+        <Form className="form" onSubmit={formik.handleSubmit}>
           <Form.Group className="mb-1">
             <Form.Control id="nome" type="text" placeholder="nome" value={formik.values.nome} onChange={formik.handleChange} isInvalid={formik.touched.nome && !!formik.errors.nome} isValid={formik.touched.nome &&!formik.errors.nome}/>
           </Form.Group>
@@ -73,7 +73,7 @@ const FormRegister: React.FC<FormRegisterProps> = ({createUser}) => {
             <Form.Control id="imagem" type="text" placeholder="link da foto" value={formik.values.imagem} onChange={formik.handleChange} isInvalid={formik.touched.imagem && !!formik.errors.imagem} isValid={formik.touched.imagem &&!formik.errors.imagem}/>
           </Form.Group>
           <Button variant="primary" type="submit">
-            Entrar
+            entrar
           </Button>
           {formik.errors.email && formik.touched.email 
           && ( 
