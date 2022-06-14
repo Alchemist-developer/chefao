@@ -50,3 +50,16 @@ button {
     border-radius: 10px !important;
     color: #000 !important;
 }
+
+
+div a {
+    text-decoration: none;
+    color: #555555;
+    transition: ease-in-out 0.2s;
+    display: flex;
+    justify-content: center;
+}
+
+div a:hover {
+    color: #76BB4C;
+}

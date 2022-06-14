@@ -28,7 +28,7 @@ const FormLogin: React.FC = () => {
           </Button>
         </Form>
         <div className="divLinkCadastro">
-        <a href="">cadastre-se</a>
+        <a href="/register">cadastre-se</a>
         </div>
       </div>
     </div>
