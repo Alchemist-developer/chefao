@@ -9,8 +9,8 @@ import * as Yup from 'yup';
 const validationSchema = Yup.object({
   nome: Yup.string().required('Por favor preencha com seu nome'),
   email: Yup.string().email('Por favor preencha com um email válido').required('Por favor preencha com seu email'),
-  senha: Yup.string().required('Por favor preencha com uma senha').min(8, 'Sua senha deve ter no mínimo 8 caracteres').max(12, 'Sua senha deve ter no máximo 12 caracteres'),
-  confirmarSenha: Yup.string().oneOf([Yup.ref('senha'), null], 'As senhas não são iguais').required('Por favor preencha com uma senha'),
+  password: Yup.string().required('Por favor preencha com uma password').min(8, 'Sua password deve ter no mínimo 8 caracteres').max(12, 'Sua password deve ter no máximo 12 caracteres'),
+  confirmarSenha: Yup.string().oneOf([Yup.ref('password'), null], 'As passwords não são iguais').required('Por favor preencha com uma password'),
   apartamento: Yup.string().required('Por favor preencha com o número do seu apartamento'),
   imagem: Yup.string().required('Por favor preencha com um link para sua foto')
 })
@@ -27,7 +27,7 @@ const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
     initialValues: {
       nome: '',
       email: '',
-      senha: '',
+      password: '',
       confirmarSenha: '',
       apartamento: '',
       imagem: ''
@@ -37,7 +37,7 @@ const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
       createUser({
         nome: values.nome,
         email: values.email,
-        senha: values.senha,
+        password: values.password,
         confirmarSenha: values.confirmarSenha,
         apartamento: values.apartamento,
         imagem: values.imagem
@@ -60,11 +60,11 @@ const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
             <Form.Control id="email" type="email" placeholder="email" value={formik.values.email} onChange={formik.handleChange} isInvalid={formik.touched.email && !!formik.errors.email} isValid={formik.touched.email && !formik.errors.email} />
           </Form.Group>
           <Form.Group className="mb-1" >
-            <Form.Control id="senha" type="password" placeholder="senha" value={formik.values.senha} onChange={formik.handleChange} isInvalid={formik.touched.senha && !!formik.errors.senha} isValid={formik.touched.senha && !formik.errors.senha} />
+            <Form.Control id="password" type="password" placeholder="password" value={formik.values.password} onChange={formik.handleChange} isInvalid={formik.touched.password && !!formik.errors.password} isValid={formik.touched.password && !formik.errors.password} />
           </Form.Group>
           <Form.Group className="mb-1" >
             <Form.Control id="confirmarSenha" type="password"
-              value={formik.values.confirmarSenha} onChange={formik.handleChange} placeholder="confirmar senha" isInvalid={formik.touched.confirmarSenha && !!formik.errors.confirmarSenha} isValid={formik.touched.confirmarSenha && !formik.errors.confirmarSenha} />
+              value={formik.values.confirmarSenha} onChange={formik.handleChange} placeholder="confirmar password" isInvalid={formik.touched.confirmarSenha && !!formik.errors.confirmarSenha} isValid={formik.touched.confirmarSenha && !formik.errors.confirmarSenha} />
           </Form.Group>
           <Form.Group className="mb-1" >
             <Form.Control id="apartamento" type="text" placeholder="unidade/apartamento" value={formik.values.apartamento} onChange={formik.handleChange} isInvalid={formik.touched.apartamento && !!formik.errors.apartamento} isValid={formik.touched.apartamento && !formik.errors.apartamento} />
@@ -81,10 +81,10 @@ const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
                 {formik.errors.email}
               </Alert>
             )}
-          {formik.errors.senha && formik.touched.senha
+          {formik.errors.password && formik.touched.password
             && (
               <Alert style={{ marginTop: 15 }} variant="danger">
-                {formik.errors.senha}
+                {formik.errors.password}
               </Alert>
             )}
           {formik.errors.confirmarSenha && formik.touched.confirmarSenha
