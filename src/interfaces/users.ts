@@ -1,10 +1,24 @@
 import axios from "axios";
-import { User } from "../types";
+import { User, SignIn } from "../types";
 
 const api = axios.create({
     baseURL: "http://localhost:3333"
 })
 
-export const createUser = (user: Omit<User, "id">): Promise<User> => {
-    return api.post<User>("/users", user).then(response => response.data)
+export const createUser = async (user: Omit<User, "id">) => {
+    try{
+        const response = await api.post("/users", user)
+        return response.data;
+    } catch(error: any) {
+        alert(`Error: ${error.response.data}`)
+    }
+}
+
+export const signInUser = async (signIn: SignIn) => {
+    try {
+        const response = await api.post("/sigin", signIn);
+        return response.data; 
+    } catch (error: any) {
+        alert (`Error: ${error.response.data}`)
+    }
 }

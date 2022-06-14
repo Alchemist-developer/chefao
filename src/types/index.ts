@@ -16,3 +16,8 @@ export interface User {
     apartamento: string,
     imagem: string
 }
+
+export interface SignIn {
+    email: string,
+    password: string
+}
