@@ -33,23 +33,10 @@ h3 {
     margin-bottom: 7% !important;
 }
 
-.loginForm {
+.form {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-}
-
-div a {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    margin: 0 auto;
-    color: black;
-    transition: 0.3s;
-}
-
-div a:hover {
-    color: #76BB4C;
 }
 
 input::placeholder {
@@ -62,4 +49,14 @@ button {
     border: transparent !important;
     border-radius: 10px !important;
     color: #000 !important;
+}
+
+.divLinkCadastro {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.divLinkCadastro a {
+    text-decoration: none;
+    color: #555555;
 }

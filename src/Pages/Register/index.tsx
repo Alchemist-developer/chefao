@@ -1,10 +1,15 @@
 import React from 'react';
 import FormRegister from '../../components/FormRegister';
+import useUser from '../../hooks/useUser';
 
 
-const Register: React.FC = () => {
+function Register(): JSX.Element {
+
+  const handleCreateUser = useUser()
+
+
   return (
-    <FormRegister />
+    <FormRegister createUser ={handleCreateUser} />
   );
 }
 

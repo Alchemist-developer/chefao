@@ -1,20 +1,40 @@
 {
-    "posts": [
-      {
-        "nome": "Ziriguidum",
-        "email": "ziriquidum@email.com",
-        "apartamento": 102,
-        "comentario": "Poxa galera, vamos respeitar o horário de silêncio! Tinha alguém usando furadeira 2 HORAS DA MANHÃ!!! ó_ó",
-        "imagem":"...",
-        "id": 1
-      },
-      {
-        "nome": "Ziri Filho",
-        "email": "zirifilho@email.com",
-        "apartamento": 102,
-        "comentario": "Contratei um personal trainer e quero um parceiro pra fazer treinos semanais e dividir o custo, quem anima? :D",
-        "imagem":"...",
-        "id": 2
-      }
-    ]
+  "posts": [
+    {
+      "nome": "Ziriguidum",
+      "email": "ziriquidum@email.com",
+      "apartamento": 102,
+      "comentario": "Poxa galera, vamos respeitar o horário de silêncio! Tinha alguém usando furadeira 2 HORAS DA MANHÃ!!! ó_ó",
+      "imagem": "...",
+      "id": 1
+    },
+    {
+      "nome": "Ziri Filho",
+      "email": "zirifilho@email.com",
+      "apartamento": 102,
+      "comentario": "Contratei um personal trainer e quero um parceiro pra fazer treinos semanais e dividir o custo, quem anima? :D",
+      "imagem": "...",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "nome": "thais",
+      "email": "thais@thais.com",
+      "senha": "12345678",
+      "confirmarSenha": "12345678",
+      "apartamento": "301",
+      "imagem": "djdjd djdj",
+      "id": 4
+    },
+    {
+      "nome": "joao",
+      "email": "joao@joao.com",
+      "senha": "12345678",
+      "confirmarSenha": "12345678",
+      "apartamento": "801",
+      "imagem": "sjdjjff",
+      "id": 5
+    }
+  ]
 }

@@ -1,11 +1,11 @@
 import React from 'react';
-import Login from '../../components/FormLogin';
+import Navbar from '../../components/Navbar';
+import FormLogin from '../../components/FormLogin';
 
-
-const FormLogin: React.FC = () => {
+const Login: React.FC = () => {
   return (
-    <Login/>
+    <FormLogin />
   );
 }
 
-export default FormLogin;
+export default Login;

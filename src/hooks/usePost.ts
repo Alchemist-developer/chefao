@@ -9,8 +9,6 @@ const usePost = () => {
         renderPosts().then(posts => setPostList(posts));
     })
 
-    const [postListId, setPostListId] = useState<Post[]>([] as Post[]);
-
     return postList;
 }
 

@@ -6,3 +6,18 @@ export interface Post {
     comentario: string,
     imagem: string
 }
+
+export interface User {
+    id: number,
+    nome: string,
+    email: string,
+    senha: string,
+    confirmarSenha: string,
+    apartamento: string,
+    imagem: string
+}
+
+export interface SignIn {
+    email: string,
+    password: string
+}
