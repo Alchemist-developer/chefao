@@ -7,17 +7,16 @@ export interface Post {
     imagem: string
 }
 
-export interface User {
-    id: number,
-    nome: string,
+export interface SignIn {
     email: string,
-    senha: string,
+    password: string
+}
+
+export interface User extends SignIn {
+    id: number,
+    password: string,
     confirmarSenha: string,
     apartamento: string,
     imagem: string
 }
 
-export interface SignIn {
-    email: string,
-    password: string
-}
