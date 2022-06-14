@@ -33,8 +33,9 @@ const FormRegister: React.FC = () => {
             <Form.Control type="text" placeholder="link da foto" />
           </Form.Group>
           <Button variant="primary" type="submit">
-            Entrar
+            Cadastrar
           </Button>
+          <div><a href="/">Voltar</a></div>
         </Form>
       </div>
     </div>
