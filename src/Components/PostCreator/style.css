@@ -55,13 +55,15 @@ textarea {
     color: white !important;
     border: transparent;
     border-radius: 25px !important;
-    transition: 0.4s ease-in-out;
+    transition: 0.6s ease-in-out !important;
+    font-weight: 100 !important;
 }
 
 .button:hover {
     background-color: #8dc44d9e !important;
-    color: white;
-    padding: 4px 55px;
+    color: white !important;
+    padding: 4px 55px !important;
+    font-weight: 100 !important;
 }
 
 @media screen and (max-width: 729px) {

@@ -72,25 +72,13 @@ const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
           <Form.Group className="mb-1" >
             <Form.Control id="imagem" type="text" placeholder="link da foto" value={formik.values.imagem} onChange={formik.handleChange} isInvalid={formik.touched.imagem && !!formik.errors.imagem} isValid={formik.touched.imagem && !formik.errors.imagem} />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="" type="submit">
             entrar
           </Button>
           {formik.errors.email && formik.touched.email
             && (
               <Alert style={{ marginTop: 15 }} variant="danger">
                 {formik.errors.email}
-              </Alert>
-            )}
-          {formik.errors.password && formik.touched.password
-            && (
-              <Alert style={{ marginTop: 15 }} variant="danger">
-                {formik.errors.password}
-              </Alert>
-            )}
-          {formik.errors.confirmarSenha && formik.touched.confirmarSenha
-            && (
-              <Alert style={{ marginTop: 15 }} variant="danger">
-                {formik.errors.confirmarSenha}
               </Alert>
             )}
           <div>

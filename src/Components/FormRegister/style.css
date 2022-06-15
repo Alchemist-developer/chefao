@@ -47,9 +47,20 @@ input::placeholder {
 
 button {
     background-color: #76BB4C !important;
-    border: transparent !important;
+    border: 0 none !important;
     border-radius: 10px !important;
     color: #000 !important;
+    font-weight: 600 !important;
+    transition: 0.4s ease-in-out !important;
+
+}
+
+button:hover {
+    background-color: #76BB4C !important;
+    border: transparent !important;
+    border-radius: 13px !important;
+    color: #000 !important;
+    font-weight: 600 !important;
 }
 
 
@@ -59,8 +70,9 @@ div a {
     transition: ease-in-out 0.2s;
     display: flex;
     justify-content: center;
+    transition: 0.3s ease-in-out;
 }
 
 div a:hover {
-    color: #76BB4C;
+    color: #191b18 !important;
 }
