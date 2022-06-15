@@ -23,6 +23,7 @@ div.userContent {
 
 div.userContent img {
     width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     margin-right: 10%;
     margin-left: 5%;
@@ -36,10 +37,8 @@ div.userContent img {
 }
 
 div.userContent img:hover {
-    width: 6.6rem;
-    border-radius: 50%;
-    margin-right: 10%;
-    margin-left: 5%;
+    width: 6.4rem;
+    height: 6.4rem;
 }
 
 div.contentProfile {
@@ -55,10 +54,7 @@ div.contentProfile li {
 
 div.contentProfile h4 {
     color: #8DC44D;
-}
-
-div.contentProfile h4 {
-    color: #8DC44D;
+    width: 300px;
 }
 
 @media screen and (max-width: 729px) {
@@ -87,15 +83,18 @@ button.buttonEdit {
     padding: 4px 33px !important;
     color: rgb(255, 255, 255) !important;
     transition: 0.3s ease-in-out !important;
+    font-weight: 100 !important;
 }
 
 button.buttonEdit:hover {
-    background-color: #8dc44dca !important;
-    border-radius: 25px;
-    border: transparent;
+    background-color: #8dc44d !important;
+    color: white !important;
+    font-weight: 100 !important;
+    border-radius: 25px !important;
+    border: transparent !important;
     padding: 4px 33px !important;
-    margin-top: 5px;
-    box-shadow: 0px -10px 13px #8dc44d1d;
+    margin-top: 5px !important;
+    box-shadow: 0px -4px 8px #00000034 !important;
 }
 
 @media screen and (max-width: 729px) {
