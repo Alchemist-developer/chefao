@@ -33,7 +33,7 @@ const userController = {
       const offset = limit * (parseInt(page) - 1);
       let filter = {
         limit,
-        offset,
+        offset
       };
       const allUserList = await Users.findAll(filter);
       return res.status(200).json(allUserList);

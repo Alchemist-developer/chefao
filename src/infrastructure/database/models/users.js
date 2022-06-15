@@ -4,7 +4,7 @@ const db = require ('../index');
 const Users = db.define (
   "Users",
   {
-    idUser: {
+    idUsers: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
