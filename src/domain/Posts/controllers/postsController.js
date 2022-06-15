@@ -3,9 +3,9 @@ const bcryptjs = require("bcryptjs");
 
 const postController = {
   async createPosts(req, res) {
-    const { nome, unidade_apartamento, post } = req.body;
+    const { name, apartment, content } = req.body;
     try {
-      const newPost = await Posts.create({ nome, unidade_apartamento, post });
+      const newPost = await Posts.create({ name, apartment, content });
       return res.status(201).json(newPost);
     } catch (error) {
       return res
@@ -34,12 +34,12 @@ const postController = {
   async updatePosts(req, res) {
     const { id } = req.params;
     try {
-      const { nome, unidade_apartamento, post } = req.body;
+      const { name, apartment, content } = req.body;
       const updatedPost = await Posts.update(
         {
-          nome,
-          unidade_apartamento,
-          post,
+          name,
+          apartment,
+          content,
         },
         {
           where: { idPosts: id },

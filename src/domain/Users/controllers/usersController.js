@@ -4,7 +4,7 @@ const bcryptjs = require("bcryptjs");
 const userController = {
   async addUser(req, res) {
     try {
-      const { nome, email, senha, unidade_apartamento } = req.body;
+      const { name, email, password, apartment } = req.body;
       const existingUser = await Users.count({ where: { email } });
       if (existingUser) {
         return res
@@ -13,10 +13,10 @@ const userController = {
       }
       const newPassword = bcryptjs.hashSync(senha, 8);
       const newUser = await Users.create({
-        nome,
+        name,
         email,
-        senha: newPassword,
-        unidade_apartamento,
+        password: newPassword,
+        apartment,
       });
       res.status(201).json(newUser);
     } catch (error) {
@@ -46,13 +46,13 @@ const userController = {
     const { id } = req.params;
 
     try {
-      const { nome, email, senha, unidade_apartamento } = req.body;
+      const { name, email, password, apartment } = req.body;
       const userUpdated = await Users.update(
         {
-          nome,
+          name,
           email,
-          senha,
-          unidade_apartamento,
+          password,
+          apartment,
         },
         {
           where: { idUser: id },
