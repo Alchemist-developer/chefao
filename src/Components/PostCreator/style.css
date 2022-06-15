@@ -31,7 +31,7 @@ div.postCreator img {
 }
 
 div.postCreator img:hover {
-    width: 6.6rem;
+    width: 6.3rem;
 }
 
 form {
@@ -60,10 +60,11 @@ textarea {
 }
 
 .button:hover {
-    background-color: #8dc44d9e !important;
+    background-color: #6033AA !important;
     color: white !important;
-    padding: 4px 55px !important;
+   margin-right: 21px !important;
     font-weight: 100 !important;
+    border-radius: 25px !important;
 }
 
 @media screen and (max-width: 729px) {
