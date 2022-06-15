@@ -51,7 +51,7 @@ textarea {
 
 .button {
     background-color: #6033AA !important;
-    padding: 6px 53px;
+    padding: 4px 53px;
     color: white !important;
     border: transparent;
     border-radius: 25px !important;
@@ -61,7 +61,7 @@ textarea {
 .button:hover {
     background-color: #8dc44d9e !important;
     color: white;
-    margin-bottom: 21px;
+    padding: 4px 55px;
 }
 
 @media screen and (max-width: 729px) {
