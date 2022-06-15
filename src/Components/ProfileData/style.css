@@ -12,6 +12,7 @@ div.containerProfile {
     min-height: 35%;
     max-height: 35%;
     font-weight: bold;
+    contain: inline-block;
 }
 
 div.userContent {
@@ -58,13 +59,23 @@ div.contentProfile h4 {
     color: #8DC44D;
 }
 
+div.contentProfile h4 {
+    color: #8DC44D;
+}
+
+@media screen and (max-width: 729px) {
+    button.buttonEdit {
+       display: none;
+    }
+}
+
 div.contentProfile h4:hover {
     color: #5d3aae7e;
     cursor: context-menu;
 }
 
 div.buttonProfile {
-    width: 33%;
+   
     display: flex;
     align-self: start;
     padding-top: 70px;
