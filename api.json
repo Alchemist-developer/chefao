@@ -67,6 +67,16 @@
       "confirmarSenha": "agoravai",
       "permission": 1,
       "id": 20
+    },
+    {
+      "email": "zirif@email.com",
+      "password": "$2a$10$5FI4CAr1HoJi/y3alFCBHuQWNKIlV2Zz0nCEpCFWyPrI9sNcZwGWK",
+      "nome": "ziri filho",
+      "confirmarSenha": "ziri12345",
+      "apartamento": "522",
+      "imagem": "ddmdm",
+      "permission": 1,
+      "id": 21
     }
   ],
   "signIn": []

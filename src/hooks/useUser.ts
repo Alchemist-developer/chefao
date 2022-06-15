@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react";
-import { createUser } from "../services/users";
-import { User } from "../types";
+// import { useEffect, useState } from "react";
+// import { createUser } from "../services/users";
+// import { User } from "../types";
 
-const useUser = () => {
-    const [userList, setUserList] = useState<User[]> ([] as User[])
+// const useUser = () => {
+//     const [userList, setUserList] = useState<User[]> ([] as User[])
 
-    const handleCreateUser = async (user: Omit<User, "id">) => {
-        const newUser = await createUser(user)  
-        setUserList(
-            oldUserList => [...oldUserList, newUser]
-        )   
-    }
+//     const handleCreateUser = async (user: Omit<User, "id">) => {
+//         const newUser = await createUser(user)  
+//         setUserList(
+//             oldUserList => [...oldUserList, newUser]
+//         )   
+//     }
 
-    return handleCreateUser;
-}
+//     return handleCreateUser;
+// }
 
-export default useUser;
+// export default useUser;

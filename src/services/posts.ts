@@ -9,7 +9,7 @@ export const renderPosts = (): Promise<Post[]> => {
  return api.get<Post[]>("/posts").then(response => response.data);
 }
 
-export const renderPostsById = (id:number, post: Post):  Promise<Post[]> => {
+export const renderPostsById = (id:number):  Promise<Post[]> => {
     return api.get<Post[]>(`/posts/${id}, post`).then(response => response.data)
 }
 
