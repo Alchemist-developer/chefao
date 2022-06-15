@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <Navbar.Collapse className="justify-content-end">
           <div>
             <S.SpanNavbar className="pe-3">Olá, usuário</S.SpanNavbar>
-            <S.LinkNavbar href="" className="ps-3">sair</S.LinkNavbar>
+            <S.LinkNavbar href="" className="ps-3"> <a href="">Sair</a> </S.LinkNavbar>
           </div>
         </Navbar.Collapse>
       </Container>
