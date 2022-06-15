@@ -1,4 +1,4 @@
-const { Users } = require("../infrastructure/database/models");
+const { Users } = require("../../../infrastructure/database/models");
 const bcryptjs = require("bcryptjs");
 
 const userController = {
@@ -16,7 +16,7 @@ const userController = {
         name,
         email,
         password: newPassword,
-        apartment,
+        apartment
       });
       res.status(201).json(newUser);
     } catch (error) {
@@ -52,7 +52,7 @@ const userController = {
           name,
           email,
           password,
-          apartment,
+          apartment
         },
         {
           where: { idUser: id },
@@ -87,4 +87,4 @@ const userController = {
   },
 };
 
-module.exports = controllerUser;
+module.exports = userController;

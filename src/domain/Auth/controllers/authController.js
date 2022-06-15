@@ -1,7 +1,7 @@
-const { Users } = require("../infrastructure/database/models");
+const { Users } = require("../../../infrastructure/database/models");
 const bcryptjs = require("bcryptjs")
 const jwt = require("jsonwebtoken")
-const secret = require("../src/infrastructure/database/config/secret")
+const secret = require("../../../infrastructure/database/config/secret")
 
 const authController = {
     async login(req, res){

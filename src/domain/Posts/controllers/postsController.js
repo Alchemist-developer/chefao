@@ -68,4 +68,4 @@ const postController = {
   },
 };
 
-module.exports = controllerPosts;
+module.exports = postController;

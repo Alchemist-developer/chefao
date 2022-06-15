@@ -2,9 +2,10 @@
   "name": "rede-social-parrot",
   "version": "1.0.0",
   "description": "<p align=\"center\">\r   Hands On Week 4, Gama Experience #41: Rede Social Parrot.\r </p><br/>",
-  "main": "index.js",
+  "main": "./src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
