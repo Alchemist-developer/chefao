@@ -5,6 +5,10 @@ import Logo from "../../assets/logo-colorido.png";
 import { User } from "../../types";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { createUser, api } from "../../services/users";
+import { signIn } from "../../store/users";
 
 const validationSchema = Yup.object({
   nome: Yup.string().required('Por favor preencha com seu nome'),
@@ -15,14 +19,9 @@ const validationSchema = Yup.object({
   imagem: Yup.string().required('Por favor preencha com um link para sua foto')
 })
 
-
-interface FormRegisterProps {
-  createUser: (user: Omit<User, "id">) => void;
-}
-
-
-const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
-
+const FormRegister: React.FC = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       nome: '',
@@ -33,15 +32,12 @@ const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
       imagem: ''
     },
     validationSchema,
-    onSubmit: values => {
-      createUser({
-        nome: values.nome,
-        email: values.email,
-        password: values.password,
-        confirmarSenha: values.confirmarSenha,
-        apartamento: values.apartamento,
-        imagem: values.imagem
-      })
+    onSubmit: async values => {
+      const { accessToken, user } = await createUser({...values, permission: 1});
+      dispatch(signIn({accessToken, permission: user.permission}))
+      //@ts-ignore
+      api.defaults.headers["Authorization"] = `Bearer ${accessToken}`
+      navigate("/feed")
     }
   })
 

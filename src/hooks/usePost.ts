@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { renderPosts, renderPostsById } from "../interfaces/posts";
+import { renderPosts, renderPostsById } from "../services/posts";
 import { Post } from "../types";
 
 const usePost = () => {

@@ -15,8 +15,26 @@ export interface SignIn {
 export interface User extends SignIn {
     id: number,
     password: string,
-    confirmarSenha: string,
+    // confirmarSenha: string,
     apartamento: string,
     imagem: string
+    permission: Permission
 }
 
+export enum Permission {
+    "Nothing",
+    "User",
+    "Admin"
+}
+
+export interface UserState {
+    isLogged: boolean,
+    accessToken: string,
+    permission: Permission
+}
+
+export interface UserState {
+    isLogged: boolean,
+    accessToken: string,
+    permission: Permission
+}

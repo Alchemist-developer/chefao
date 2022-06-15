@@ -1,16 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-
-export enum Permission {
-    "Nothing",
-    "User",
-    "Admin"
-}
-
-interface UserState {
-    isLogged: boolean,
-    accessToken: string,
-    permission: Permission
-}
+import { Permission, UserState } from "../../types"
 
 const initialState: UserState = {
     isLogged: false,

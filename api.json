@@ -19,112 +19,54 @@
   ],
   "users": [
     {
-      "nome": "thais",
-      "email": "thais@thais.com",
-      "senha": "12345678",
-      "confirmarSenha": "12345678",
-      "apartamento": "301",
-      "imagem": "djdjd djdj",
-      "id": 4
-    },
-    {
-      "nome": "joao",
-      "email": "joao@joao.com",
-      "senha": "12345678",
-      "confirmarSenha": "12345678",
-      "apartamento": "801",
-      "imagem": "sjdjjff",
-      "id": 5
-    },
-    {
-      "nome": "chico",
-      "email": "chico@email.com",
-      "senha": "12345678",
-      "confirmarSenha": "12345678",
-      "apartamento": "2702",
-      "imagem": "hshdhd",
-      "id": 6
-    },
-    {
-      "nome": "jose",
-      "email": "jose@email.com",
-      "senha": "12345678",
-      "confirmarSenha": "12345678",
-      "apartamento": "2101",
-      "imagem": "jdjdd",
-      "id": 7
-    },
-    {
-      "email": "jshdhfhd@jdjdjdjf.com",
-      "password": "$2a$10$wDUkEFjj7/mrZ0IBPByoa.JCDJFAEIBCW5vt0GWHXBELFUC4dCfdG",
-      "nome": "ahsdb",
-      "confirmarpassword": "123456789",
-      "apartamento": "304",
-      "imagem": "jdfjfjfj",
-      "id": 8
-    },
-    {
-      "email": "maria@maria.com",
-      "password": "$2a$10$zBH/0Ngf4pG.eI65LKqDe.fWxc4iZ5GkQyQeBBXA/Egd8zrBP1z3m",
-      "nome": "maria",
-      "confirmarSenha": "maria123",
-      "apartamento": "102",
-      "imagem": "dmdmfmf",
-      "id": 9
-    },
-    {
-      "email": "paulo@paulo.com",
-      "password": "$2a$10$Xpy.T6L8jAxfMaaIv5segeEO7WwEYbns/2W7cNEWt7IOSd5ZMPDbO",
-      "nome": "paulo",
-      "confirmarSenha": "paulo123",
-      "apartamento": "203",
-      "imagem": "skfkfkf",
-      "id": 10
-    },
-    {
-      "email": "ana@paulo.com",
-      "password": "$2a$10$cN6Qaf6Lm/VknaP1UPdMz.GpQFNIYeUqnJSgQAJDn49Mhe0PuowQq",
+      "email": "ana@ana.coom.br",
+      "password": "$2a$10$xlXDIvTZ7.pmsjMaV5p2aOXfj30h40XZYu069o9SsSLijNF16pfGW",
       "nome": "ana",
-      "confirmarSenha": "paulo123",
-      "apartamento": "203",
-      "imagem": "skfkfkf",
-      "id": 11
+      "confirmarSenha": "ana12345",
+      "apartamento": "12662",
+      "imagem": "sjjdfjfjffj",
+      "permission": 1,
+      "id": 16
     },
     {
-      "email": "bruno@email.com",
-      "password": "$2a$10$uMgW0YnNzIYARcMUQjwy0eSXEcFQ1XHnAevPoN2CCTDZoeqCxbolO",
-      "nome": "bruno",
-      "confirmarSenha": "bruno123",
-      "apartamento": "101",
-      "imagem": "dmdmmd",
-      "id": 12
+      "email": "joao@joao.com",
+      "password": "$2a$10$c6kj.6yPmIM8joH1fwC4NOHeBIZoSbCysm81.hNlhy/qIHfqkeQ3q",
+      "nome": "joao",
+      "confirmarSenha": "joao12345",
+      "apartamento": "25441",
+      "imagem": "jjdjjdkkf",
+      "permission": 1,
+      "id": 17
     },
     {
-      "email": "ziri@email.com",
-      "password": "$2a$10$gdyRHpu1zmiKquNol0qffegNPkwcXQgB3.lShjwYgOuO7pC3NatjO",
-      "nome": "ziri neto",
-      "confirmarSenha": "zirineto",
-      "apartamento": "1604",
-      "imagem": "sdjdjd",
-      "id": 13
+      "email": "oi@oi.com",
+      "password": "$2a$10$HjPI4LW0PTddR2QDJKdO6OhqzyyfStjNSTEaniFjwMqseD9dNd9qW",
+      "nome": "oi",
+      "confirmarSenha": "12345678",
+      "apartamento": "444",
+      "imagem": "dfghj",
+      "permission": 1,
+      "id": 18
     },
     {
-      "email": "guto@guto.com",
-      "password": "$2a$10$7oUp2CwTZcaq4sbff6ic/.XfxC3xUBtIk.sN4U0z00MFXyhPvUJN2",
-      "nome": "guto",
-      "confirmarSenha": "guto12345",
-      "apartamento": "1802",
-      "imagem": "ddsss",
-      "id": 14
+      "email": "qsaco@gmail.com",
+      "password": "$2a$10$WmIlklJoqNagjSkDeL1udeAq0/Bu9kQAUv3bYmfNd.EIvuyI1j1g2",
+      "nome": "qsaco",
+      "confirmarSenha": "qsaco123",
+      "apartamento": "2552",
+      "imagem": "fghjklç",
+      "permission": 1,
+      "id": 19
     },
     {
-      "email": "thais@gmail.com",
-      "password": "$2a$10$9cOixQvy1DGRnkIRhk2Kr.iWEOlOwnUG8ih/zDCTnPv0i9iKM9zeu",
-      "nome": "thais",
-      "confirmarSenha": "thais123",
-      "apartamento": "2566",
-      "imagem": "dmddjdd",
-      "id": 15
+      "email": "agora@vai.com",
+      "password": "$2a$10$oOaalqvMVLxsSXxInyd49uiryvGZAWB6N87re4PLvvvmBLz8Bbqvu",
+      "nome": "agora vai",
+      "apartamento": "3456",
+      "imagem": "sdfgh",
+      "confirmarSenha": "agoravai",
+      "permission": 1,
+      "id": 20
     }
   ],
   "signIn": []

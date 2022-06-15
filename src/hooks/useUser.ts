@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { createUser } from "../interfaces/users";
+import { createUser } from "../services/users";
 import { User } from "../types";
 
 const useUser = () => {

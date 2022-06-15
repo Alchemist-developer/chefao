@@ -1,7 +1,7 @@
 import axios from "axios";
 import { User, SignIn } from "../types";
 
-const api = axios.create({
+export const api = axios.create({
     baseURL: "http://localhost:3333"
 })
 

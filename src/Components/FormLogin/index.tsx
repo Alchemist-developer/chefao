@@ -4,7 +4,10 @@ import "./style.css";
 import Logo from "../../assets/logo-colorido.png";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import { signInUser } from "../../interfaces/users";
+import { api, signInUser } from "../../services/users";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { signIn } from "../../store/users";
 
 const validationSchema = Yup.object({
   email: Yup.string().email('Por favor preencha com um email válido').required('Por favor preencha com seu email'),
@@ -13,7 +16,8 @@ const validationSchema = Yup.object({
 
 
 const FormLogin: React.FC = () => {
-  
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -22,7 +26,10 @@ const FormLogin: React.FC = () => {
     validationSchema,
     onSubmit: async values => {
       const {accessToken, user} = await signInUser(values);
-      alert(JSON.stringify({accessToken, nome: user.nome}, null, 2))
+      dispatch(signIn({accessToken, permission: user.permission}));
+      //@ts-ignore
+      api.defaults.headers["Authorization"] = `Bearer ${accessToken}`
+      navigate("/feed")
     }
   })
 
