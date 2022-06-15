@@ -12,10 +12,12 @@ export const LinkNavbar = styled.span`
   font-size: 16px;
   color: #6033aa;
   cursor: pointer;
+  display: inline-block;
 `;
 
 export const NavbarComponent = styled(Navbar)`
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   height: 86px;
   padding: 0;
+  margin: 0;
 `;
