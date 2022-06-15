@@ -15,4 +15,6 @@ export const LinkNavbar = styled.span`
 
 export const NavbarComponent = styled(Navbar)`
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 86px;
+  padding: 0;
 `;

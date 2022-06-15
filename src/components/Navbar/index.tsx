@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <S.NavbarComponent>
       <Container>
         <Navbar.Brand href="/">
-          <img src={Logo} width="245" alt="Parrot Logo" />
+          <img src={Logo} width="235" alt="Parrot Logo" />
         </Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
           <div>
