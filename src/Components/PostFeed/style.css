@@ -24,12 +24,12 @@ div.postFeed {
 }
 
 .postFeed img {
-    height: 6rem;
-    transition: 2s;
+    height: 5rem;
+    transition: 0.4s;
 }
 
 div.postFeed img:hover {
-    height: 6.6rem;
+    height: 5.2rem;
 }
 
 div.postFeed .nomeApartamento {
