@@ -26,10 +26,12 @@ div.postCreator {
 div.postCreator img {
     width: 6rem;
     transition: 2s;
+    margin-right: 10px;
+    transition: 0.34s;
 }
 
 div.postCreator img:hover {
-    width: 6.6rem;
+    width: 6.3rem;
 }
 
 form {
@@ -47,18 +49,22 @@ textarea {
     border-radius: 10px;
 }
 
-button {
-    background-color: #6033AA;
-    padding: 2px 53px;
-    color: white;
+.button {
+    background-color: #6033AA !important;
+    padding: 4px 53px;
+    color: white !important;
     border: transparent;
     border-radius: 25px !important;
-    transition: 0.4s ease-in-out;
+    transition: 0.6s ease-in-out !important;
+    font-weight: 100 !important;
 }
 
-button:hover {
-    background-color: #5d3aae7e;
-    color: white;
+.button:hover {
+    background-color: #6033AA !important;
+    color: white !important;
+   margin-right: 21px !important;
+    font-weight: 100 !important;
+    border-radius: 25px !important;
 }
 
 @media screen and (max-width: 729px) {

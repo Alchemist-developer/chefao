@@ -9,7 +9,7 @@ const PostCreator: React.FC = () => {
         <img src={Icon} alt="" />
         <form>
           <textarea name="" id=""></textarea>
-          <button type="button">publicar</button>
+          <button className="button" type="button">publicar</button>
         </form>
       </div>
     </div>
