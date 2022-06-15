@@ -116,6 +116,15 @@
       "apartamento": "1802",
       "imagem": "ddsss",
       "id": 14
+    },
+    {
+      "email": "thais@gmail.com",
+      "password": "$2a$10$9cOixQvy1DGRnkIRhk2Kr.iWEOlOwnUG8ih/zDCTnPv0i9iKM9zeu",
+      "nome": "thais",
+      "confirmarSenha": "thais123",
+      "apartamento": "2566",
+      "imagem": "dmddjdd",
+      "id": 15
     }
   ],
   "signIn": []
