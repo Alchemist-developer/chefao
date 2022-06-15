@@ -6,7 +6,7 @@ let seed = [];
 for (let i = 1; i <= 10; i++) {
   seed.push(
     {
-      idUser: faker.random.numeric(6, { bannedDigits: ['0'] }),
+      idUsers:i,
       content: faker.lorem.words(20),
       createdAt: new Date(),
       updatedAt: new Date()
