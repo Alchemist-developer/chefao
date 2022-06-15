@@ -16,7 +16,7 @@ const userController = {
         name,
         email,
         password: newPassword,
-        apartment
+        apartment,
       });
       res.status(201).json(newUser);
     } catch (error) {
@@ -52,7 +52,7 @@ const userController = {
           name,
           email,
           password,
-          apartment
+          apartment,
         },
         {
           where: { idUser: id },
