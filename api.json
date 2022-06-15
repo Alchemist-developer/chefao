@@ -107,9 +107,16 @@
       "apartamento": "1604",
       "imagem": "sdjdjd",
       "id": 13
+    },
+    {
+      "email": "guto@guto.com",
+      "password": "$2a$10$7oUp2CwTZcaq4sbff6ic/.XfxC3xUBtIk.sN4U0z00MFXyhPvUJN2",
+      "nome": "guto",
+      "confirmarSenha": "guto12345",
+      "apartamento": "1802",
+      "imagem": "ddsss",
+      "id": 14
     }
   ],
-  "signIn": [
-    
-  ]
+  "signIn": []
 }

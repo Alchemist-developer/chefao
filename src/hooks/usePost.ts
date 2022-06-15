@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { renderPosts, renderPostsId } from "../interfaces/posts";
+import { renderPosts, renderPostsById } from "../interfaces/posts";
 import { Post } from "../types";
 
 const usePost = () => {
@@ -9,9 +9,18 @@ const usePost = () => {
         renderPosts().then(posts => setPostList(posts));
     })
 
-    return postList;
+    // const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
+
+    // useEffect(() => {
+    //     renderPostsById().then(posts => setPostListByID(posts))
+    // })
+
+
+
+    return postList
 }
 
 
 
 export default usePost;
+
