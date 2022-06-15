@@ -24,13 +24,16 @@ div.postCreator {
 }
 
 div.postCreator img {
+    height: 6rem;
     width: 6rem;
     transition: 2s;
     margin-right: 10px;
     transition: 0.34s;
+    border-radius: 50%;
 }
 
 div.postCreator img:hover {
+    height: 6.3rem;
     width: 6.3rem;
 }
 

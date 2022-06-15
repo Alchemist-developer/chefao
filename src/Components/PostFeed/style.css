@@ -24,11 +24,14 @@ div.postFeed {
 }
 
 .postFeed img {
+    width: 5rem;
     height: 5rem;
     transition: 0.4s;
+    border-radius: 50%;
 }
 
 div.postFeed img:hover {
+    width: 5.2rem;
     height: 5.2rem;
 }
 
@@ -52,4 +55,3 @@ div.postFeed p {
         display: none;
     }
 }
-
