@@ -30,7 +30,7 @@ div.userContent img {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 375px) {
     div.userContent img {
         display: none;
     }
