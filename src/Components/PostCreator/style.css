@@ -26,6 +26,8 @@ div.postCreator {
 div.postCreator img {
     width: 6rem;
     transition: 2s;
+    margin-right: 10px;
+    transition: 0.34s;
 }
 
 div.postCreator img:hover {
@@ -47,18 +49,19 @@ textarea {
     border-radius: 10px;
 }
 
-button {
-    background-color: #6033AA;
-    padding: 2px 53px;
-    color: white;
+.button {
+    background-color: #6033AA !important;
+    padding: 6px 53px;
+    color: white !important;
     border: transparent;
     border-radius: 25px !important;
     transition: 0.4s ease-in-out;
 }
 
-button:hover {
-    background-color: #5d3aae7e;
+.button:hover {
+    background-color: #8dc44d9e !important;
     color: white;
+    margin-bottom: 21px;
 }
 
 @media screen and (max-width: 729px) {

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const FeedContainer = styled.div`
-width: 50%;
+width: auto;
 height: 100%;
 margin-top: 100px
 display: flex;
