@@ -13,9 +13,9 @@ routes.put("/posts/:id", postsController.updatePosts);
 routes.delete("/posts/:id", postsController.deletePosts);
 
 //Rotas CRUD Users
-routes.post("/users/", usersController.addUser);
+routes.post("/users", usersController.addUser);
 
-routes.get("/users/", usersController.browseUser);
+routes.get("/users", usersController.browseUser);
 
 routes.put("/users/:id", usersController.updateUser);
 
