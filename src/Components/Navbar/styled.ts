@@ -11,6 +11,7 @@ export const LinkNavbar = styled.span`
   text-decoration: none;
   font-size: 16px;
   color: #6033aa;
+  cursor: pointer;
 `;
 
 export const NavbarComponent = styled(Navbar)`
