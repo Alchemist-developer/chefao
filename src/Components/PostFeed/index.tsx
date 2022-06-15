@@ -10,7 +10,8 @@ interface PostFeedProps {
 
 const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
   return (
-    posts.map(post => (
+    <Container>
+    {posts.map(post => (
        <div className="containerPostFeed">
        <div className="postFeed">
          <img src={Icon} alt="" />
@@ -21,7 +22,8 @@ const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
          </div>
        </div>
      </div>
-    ))
+    ))}
+    </Container>
   );
 }
 
