@@ -79,6 +79,18 @@ const FormRegister: React.FC<FormRegisterProps> = ({ createUser }) => {
             && (
               <Alert style={{ marginTop: 15 }} variant="danger">
                 {formik.errors.email}
+                {formik.errors.password && formik.touched.password
+            && (
+              <Alert style={{ marginTop: 15 }} variant="danger">
+                {formik.errors.password}
+              </Alert>
+            )}
+          {formik.errors.confirmarSenha && formik.touched.confirmarSenha
+            && (
+              <Alert style={{ marginTop: 15 }} variant="danger">
+                {formik.errors.confirmarSenha}
+              </Alert>
+            )}
               </Alert>
             )}
           <div>
