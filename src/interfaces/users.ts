@@ -16,7 +16,7 @@ export const createUser = async (user: Omit<User, "id">) => {
 
 export const signInUser = async (signIn: SignIn) => {
     try {
-        const response = await api.post("/sigin", signIn);
+        const response = await api.post("/signin", signIn);
         return response.data; 
     } catch (error: any) {
         alert (`Error: ${error.response.data}`)

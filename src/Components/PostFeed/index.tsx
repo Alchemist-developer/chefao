@@ -10,7 +10,7 @@ interface PostFeedProps {
 
 const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
   return (
-    <Container>
+    <Container className='p-0'>
     {posts.map(post => (
        <div className="containerPostFeed">
        <div className="postFeed">

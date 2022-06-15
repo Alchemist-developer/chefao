@@ -41,7 +41,7 @@ const FormLogin: React.FC = () => {
           <Form.Group className="mb-1" >
             <Form.Control id="senha" type="password" placeholder="senha" value={formik.values.password} onChange={formik.handleChange} isInvalid={formik.touched.password && !!formik.errors.password} isValid={formik.touched.password && !formik.errors.password}/>
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" disabled={!formik.isValid}>
             entrar
           </Button>
         </Form>
