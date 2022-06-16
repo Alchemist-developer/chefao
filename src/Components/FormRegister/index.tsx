@@ -9,6 +9,8 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { createUser, api } from "../../services/users";
 import { signIn } from "../../store/users";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
 
 const validationSchema = Yup.object({
   nome: Yup.string().required('Por favor preencha com seu nome'),
@@ -28,16 +30,18 @@ const FormRegister: React.FC = () => {
       email: '',
       password: '',
       confirmarSenha: '',
-      apartamento: 0,
+      apartamento: '',
       imagem: ''
     },
     validationSchema,
     onSubmit: async values => {
       const { accessToken, user } = await createUser({...values, permission: 1});
-      dispatch(signIn({accessToken, permission: user.permission}))
+      dispatch(signIn({accessToken, permission: user.permission, user}))
       //@ts-ignore
       api.defaults.headers["Authorization"] = `Bearer ${accessToken}`
-      navigate("/feed")
+     
+     
+      navigate(`/feed/?${user.id}`)
     }
   })
 

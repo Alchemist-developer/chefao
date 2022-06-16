@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Post } from '../../types';
-import Icon from "/src/assets/icon.jpeg";
+import Icon from "/src/assets/icon.png";
 import "./style.css"
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
@@ -9,13 +9,16 @@ import { renderPostsById } from '../../services/posts';
 import { useEffect, useState } from "react";
 
 
-interface PostFeedProps {
-  posts: Post[];
-}
+const ProfileFeed: React.FC = () => {
+  let id = parseInt(window.location.search.split('?')[1])
 
-const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
-// const posts2 = useSelector((state: RootState) => state.postsSlice.post);
-// console.log(posts2)
+    const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
+    
+    useEffect(() => {
+      renderPostsById(id).then(posts => setPostListByID(posts))
+    }, [])
+
+    console.log(postListById)
 
 // const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
 // const { userposts } = usePost() 
@@ -26,7 +29,7 @@ const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
 
   return (
     <Container className='p-0'>
-      {posts.map(post => (
+      {postListById.map(post => (
         <div className="containerPostFeed">
           <div className="postFeed">
             <img src={Icon} alt="" />
@@ -42,4 +45,4 @@ const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
   );
 }
 
-export default PostFeed;
+export default ProfileFeed;

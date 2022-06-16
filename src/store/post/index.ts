@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 import { Permission, UserState, Post, PostState } from "../../types"
 
+
 const initialState: PostState = {
     post: [] as Post[]
 }
