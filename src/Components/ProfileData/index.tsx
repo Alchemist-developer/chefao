@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css'
-import Icon from '/src/assets/icon.png'
+import Icon from '/src/assets/icon.jpeg'
 
 const ProfileData: React.FC = () => {
     return (

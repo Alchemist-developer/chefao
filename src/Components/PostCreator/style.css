@@ -60,7 +60,7 @@ textarea {
     color: white !important;
     border: transparent;
     border-radius: 25px !important;
-    transition: 0.6s ease-in-out !important;
+    transition: 0.1s ease-in-out !important;
     font-weight: 100 !important;
 }
 
