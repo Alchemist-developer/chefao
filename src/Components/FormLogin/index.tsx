@@ -26,7 +26,7 @@ const FormLogin: React.FC = () => {
     validationSchema,
     onSubmit: async values => {
       const {accessToken, user} = await signInUser(values);
-      dispatch(signIn({accessToken, permission: user.permission}));
+      dispatch(signIn({accessToken, permission: user.permission, user}));
       //@ts-ignore
       api.defaults.headers["Authorization"] = `Bearer ${accessToken}`
       navigate("/feed")
