@@ -35,7 +35,8 @@ div.postFeed:hover {
 p.comentario {
     white-space: normal;   
     display: block;
-    word-break: break-all;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 ::placeholder {
