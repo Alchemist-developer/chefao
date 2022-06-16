@@ -31,6 +31,10 @@ const Users = db.define (
     updatedAt: {
       allowNull: false,
       type: DataTypes.DATE
+    },
+    userType: {
+      allowNull: false,
+      type: DataTypes.STRING
     }
   },
   {

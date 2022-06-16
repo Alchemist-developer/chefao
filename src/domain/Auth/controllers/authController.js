@@ -6,7 +6,7 @@ const secret = require("../../../infrastructure/database/config/secret")
 const authController = {
     async login(req, res){
         try{
-            const {email, senha} = req.body;
+            const {email, password} = req.body;
             const user = await Users.findOne({
                 where: {
                     email

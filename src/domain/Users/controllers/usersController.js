@@ -4,19 +4,19 @@ const bcryptjs = require("bcryptjs");
 const userController = {
   async addUser(req, res) {
     try {
-      const { name, email, password, apartment } = req.body;
+      const { name, email, apartment, password } = req.body;
       const existingUser = await Users.count({ where: { email } });
       if (existingUser) {
         return res
           .status(400)
           .json("E-mail de usuário já previamente cadastrado");
       }
-      const newPassword = bcryptjs.hashSync(senha, 8);
+      const newPassword = bcryptjs.hashSync(password, 10);
       const newUser = await Users.create({
         name,
         email,
-        password: newPassword,
         apartment,
+        password: newPassword,
       });
       res.status(201).json(newUser);
     } catch (error) {
@@ -29,11 +29,12 @@ const userController = {
   async browseUser(req, res) {
     try {
       const { page = 1 } = req.query;
-      const limit = 20;
+      const limit = 200;
       const offset = limit * (parseInt(page) - 1);
       let filter = {
         limit,
-        offset
+        offset,
+        attributes: ['idUsers', 'name', 'email', 'apartment', 'userType']
       };
       const allUserList = await Users.findAll(filter);
       return res.status(200).json(allUserList);
@@ -46,16 +47,17 @@ const userController = {
     const { id } = req.params;
 
     try {
-      const { name, email, password, apartment } = req.body;
+      const { name, email, apartment, password } = req.body;
+      const newPassword = bcryptjs.hashSync(password, 10);
       const userUpdated = await Users.update(
         {
           name,
           email,
-          password,
           apartment,
+          password: newPassword,
         },
         {
-          where: { idUser: id },
+          where: { idUsers: id },
         }
       );
 
@@ -74,7 +76,7 @@ const userController = {
       const { id } = req.params;
       const users = await Users.destroy({
         where: {
-          idUser: id,
+          idUsers: id,
         },
       });
       if (!users) return res.status(404).json("Usuário não encontrado");

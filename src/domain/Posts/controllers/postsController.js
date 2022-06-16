@@ -1,11 +1,17 @@
-const { Posts } = require("../../../infrastructure/database/models");
+const { Posts, Users } = require("../../../infrastructure/database/models");
 const bcryptjs = require("bcryptjs");
 
 const postController = {
   async createPosts(req, res) {
+    const { id } = req.params;
     const { name, apartment, content } = req.body;
     try {
-      const newPost = await Posts.create({ name, apartment, content });
+      const newPost = await Posts.create(
+        { content },
+        {
+          where: { idPosts: id },
+        }
+      );
       return res.status(201).json(newPost);
     } catch (error) {
       return res
@@ -18,7 +24,7 @@ const postController = {
     //criar forma de validar o usuário para listar apenas os posts do id dele
     try {
       const { page = 1 } = req.query;
-      const limit = 20;
+      const limit = 200;
       const offset = limit * (parseInt(page) - 1);
       let filter = {
         limit,
@@ -37,8 +43,6 @@ const postController = {
       const { name, apartment, content } = req.body;
       const updatedPost = await Posts.update(
         {
-          name,
-          apartment,
           content,
         },
         {
