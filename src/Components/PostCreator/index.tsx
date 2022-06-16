@@ -37,7 +37,7 @@ const PostCreator: React.FC = () => {
       <div className="postCreator">
         <img src={Icon} alt="" />
         <form onSubmit={formik.handleSubmit}>
-          <textarea id="comentario" placeholder="Deixe aqui seu comentário" value={formik.values.comentario} onChange={formik.handleChange}></textarea>
+          <textarea className="post-area" id="comentario" placeholder="Deixe aqui seu comentário" value={formik.values.comentario} onChange={formik.handleChange}></textarea>
           <button className="button" type="submit">publicar</button>
         </form>
       </div>
