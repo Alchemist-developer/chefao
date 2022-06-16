@@ -3,6 +3,8 @@ import { Container } from 'react-bootstrap';
 import { Post } from '../../types';
 import Icon from "/src/assets/icon.png";
 import "./style.css"
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
 
 
 interface PostFeedProps {
@@ -10,7 +12,8 @@ interface PostFeedProps {
 }
 
 const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
-
+// const posts = useSelector((state: RootState) => state.postsSlice.post);
+// console.log(posts)
   return (
     <Container className='p-0'>
     {posts.map(post => (

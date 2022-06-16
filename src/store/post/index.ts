@@ -5,7 +5,7 @@ const initialState: PostState = {
     post: [] as Post[]
 }
 
-const usersSlice = createSlice({
+const postsSlice = createSlice({
     name: "@post",
     initialState,
     reducers:{
@@ -23,6 +23,6 @@ const usersSlice = createSlice({
     }
 })
 
-export const { getPost, addNewPost } = usersSlice.actions
+export const { getPost, addNewPost } = postsSlice.actions
 
-export default usersSlice.reducer;
+export default postsSlice.reducer;
