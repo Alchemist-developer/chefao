@@ -7,7 +7,7 @@ const authController = {
     async login(req, res){
         try{
             const {email, password} = req.body;
-            const user = await Users.findOne({
+                    const user = await Users.findOne({
                 where: {
                     email
                 }
@@ -16,7 +16,7 @@ const authController = {
                 return res.status(401).json("Usuário ou Senha invalido, verique e tente novamente");
             }
 
-            if (!bcryptjs.compareSync(senha, user.senha)){
+            if (!bcryptjs.compareSync(password, user.password)){
                 return res.status(401).json("Usuário ou Senha invalido, verique e tente novamente");
             }
             
@@ -24,7 +24,7 @@ const authController = {
                 idUsers:user.idUsers,
                 email:user.email
             }, secret.chave);
-            return res.json(token);
+            return res.json({ token, userType:user.userType, idUsers:user.idUsers });
         }
         catch(error){
             console.error(error);
