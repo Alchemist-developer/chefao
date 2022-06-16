@@ -11,6 +11,8 @@ const ProfileUser: React.FC = () => {
     <BodyContainer>  
    <FeedContainer>
   <ProfileData/>
+  {/* aqui vao os posts do usuario logado - postfeed*/}
+ 
    </FeedContainer>
   </BodyContainer>
   </div>
