@@ -5,6 +5,8 @@ import Icon from "/src/assets/icon.png";
 import "./style.css"
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
+import { renderPostsById } from '../../services/posts';
+import { useEffect, useState } from "react";
 
 
 interface PostFeedProps {
@@ -12,8 +14,16 @@ interface PostFeedProps {
 }
 
 const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
-// const posts = useSelector((state: RootState) => state.postsSlice.post);
-// console.log(posts)
+// const posts2 = useSelector((state: RootState) => state.postsSlice.post);
+// console.log(posts2)
+
+// const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
+// const { userposts } = usePost() 
+// useEffect(() => {
+//   let id = parseInt(window.location.search.split('?')[1])
+//  userposts(id);
+// }, [])
+
   return (
     <Container className='p-0'>
       {posts.map(post => (
