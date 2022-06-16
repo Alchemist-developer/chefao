@@ -1,10 +1,11 @@
 export interface Post {
     id: number,
-    nome: string,
-    email: string,
-    apartamento: number,
+    user_nome: string,
+    user_email: string,
+    user_apartamento: number,
     comentario: string,
-    imagem: string
+    user_imagem: string
+    user_id: number
 }
 
 export interface SignIn {
@@ -16,7 +17,7 @@ export interface User extends SignIn {
     id: number,
     password: string,
     // confirmarSenha: string,
-    apartamento: string,
+    apartamento: number,
     imagem: string
     permission: Permission
 }
@@ -30,11 +31,14 @@ export enum Permission {
 export interface UserState {
     isLogged: boolean,
     accessToken: string,
-    permission: Permission
+    permission: Permission,
+    id?: number,
+    nome?: string,
+    email?: string,
+    apartamento?: number
+    imagem?: string
 }
 
-export interface UserState {
-    isLogged: boolean,
-    accessToken: string,
-    permission: Permission
+export interface PostState {
+    post: Post []
 }

@@ -10,8 +10,20 @@ export const renderPosts = (): Promise<Post[]> => {
 }
 
 export const renderPostsById = (id:number):  Promise<Post[]> => {
-    return api.get<Post[]>(`/posts/${id}, post`).then(response => response.data)
+    return api.get<Post[]>(`/posts/${id}`).then(response => response.data)
 }
+
+export const createPost = async (post: Omit<Post, "id">) => {
+    try{
+        const response = await api.post("/posts", post)
+        return response.data;
+    } catch(error: any) {
+        alert(`Error: ${error.response.data}`)
+    }
+}
+
+
+
 
 // export const renderPostsById = async (id: number, post: Omit<Post, "id">) => {
 //     try{
