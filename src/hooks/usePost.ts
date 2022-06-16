@@ -2,25 +2,28 @@ import { useEffect, useState } from "react";
 import { renderPosts, renderPostsById } from "../services/posts";
 import { Post } from "../types";
 
-const usePost = () => {
+export const usePost = () => {
     const [postList, setPostList] = useState<Post[]>([] as Post[]);
 
     useEffect(() => {
         renderPosts().then(posts => setPostList(posts));
     })
 
-    // const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
-
-    // useEffect(() => {
-    //     renderPostsById().then(posts => setPostListByID(posts))
-    // })
-
-
-
     return postList
 }
 
 
 
-export default usePost;
+
+export const usePostId = () => {
+    const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
+
+    useEffect(() => {
+        let userposts = async (id: number) => {
+            renderPostsById(id).then(posts => setPostListByID(posts))
+        }
+    })
+
+    return postListById
+}
 
