@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import "./style.css";
-import Icon from "/src/assets/icon.png";
+import Icon from "/src/assets/icon.jpeg";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { createPost } from "../../services/posts";

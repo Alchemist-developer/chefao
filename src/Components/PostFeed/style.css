@@ -35,7 +35,8 @@ div.postFeed:hover {
 p.comentario {
     white-space: normal;   
     display: block;
-    word-break: break-all;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 ::placeholder {
@@ -47,7 +48,8 @@ p.comentario {
     height: 5rem;
     transition: 0.4s;
     border-radius: 50%;
-    margin-right: 15px;
+    margin: auto;
+    margin-right: 21px;
 }
 div.postFeed .nomeApartamento {
     color: #76bb4c;

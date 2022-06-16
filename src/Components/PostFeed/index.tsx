@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Post } from '../../types';
-import Icon from "/src/assets/icon.png";
+import Icon from "/src/assets/icon.jpeg";
 import "./style.css"
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
