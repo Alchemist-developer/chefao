@@ -4,7 +4,7 @@ const usersController = require("../domain/Users/controllers/usersController");
 const routes = express.Router();
 
 const authController = require("../domain/Auth/controllers/authController");
-const login = require("../infrastructure/database/validator/loginTruster");
+const usersLogin = require("../infrastructure/database/validator/loginTruster");
 
 //Rotas CRUD Posts
 routes.post("/posts/:id", postsController.createPosts);
@@ -17,8 +17,8 @@ routes.post("/users", usersController.addUser);
 routes.get("/users", usersController.browseUser);
 routes.put("/users/:id", usersController.updateUser);
 routes.delete("/users/:id", usersController.deleteUser);
-routes.post("/login", login, authController.login);
 
-//Rotas CRUD Comentarios?
+//Rotas CRUD Login
+routes.post("/login", usersLogin, authController.login);
 
 module.exports = routes;
