@@ -70,3 +70,15 @@ div.postFeed p {
         display: none;
     }
 }
+
+@media screen and (max-width: 769px) {
+    p.comentario {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    p.comentario {
+        display: block;
+    }
+}
