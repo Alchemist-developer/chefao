@@ -25,14 +25,6 @@
       "user_id": 2
     },
     {
-      "id": 4,
-      "user_nome": "vai",
-      "user_email": "vai@vai.com",
-      "user_apartamento": "5678",
-      "comentario": "ggg",
-      "user_id": 3
-    },
-    {
       "id": 5,
       "user_nome": "thais",
       "user_email": "thais@thais.com",
