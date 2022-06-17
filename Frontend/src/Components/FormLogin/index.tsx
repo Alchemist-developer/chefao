@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import { Alert, Button, Form } from "react-bootstrap";
 import "./style.css";
 import Logo from "../../assets/logo-colorido.png";
 import { useFormik } from "formik";
@@ -50,6 +50,18 @@ const FormLogin: React.FC = () => {
           <Button variant="primary" type="submit" disabled={!formik.isValid}>
             entrar
           </Button>
+          {formik.errors.email && formik.touched.email
+            && (
+              <Alert style={{ marginTop: 15 }} variant="danger">
+                {formik.errors.email}
+                {formik.errors.password && formik.touched.password
+            && (
+              <Alert style={{ marginTop: 15 }} variant="danger">
+                {formik.errors.password}
+              </Alert>
+            )}
+            </Alert>
+            )}
         </Form>
         <div className="divLinkCadastro">
         <a href="/register">cadastre-se</a>
