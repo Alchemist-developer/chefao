@@ -76,3 +76,13 @@ div a {
 div a:hover {
     color: #191b18 !important;
 }
+
+@media screen and (max-width:502px) {
+    img.ocult-img {
+        display: none;
+     }
+     h3.media {
+        font-size: 10px;
+        font-weight: bold;
+     }
+}
