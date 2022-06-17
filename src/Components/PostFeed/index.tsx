@@ -20,7 +20,7 @@ const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
       {posts.map(post => (
         <div className="containerPostFeed">
           <div className="postFeed">
-            <img src={Icon} alt="" />
+            <img src={Icon} alt="imagem do usuario" />
             <div>
               <h5 className='nomeApartamento'>{post.user_nome} - apê {post.user_apartamento}</h5>
               <h5 className='dataHora'>13/06/2022 03:05</h5>
