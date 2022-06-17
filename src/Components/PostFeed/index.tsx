@@ -14,15 +14,6 @@ interface PostFeedProps {
 }
 
 const PostFeed: React.FC<PostFeedProps> = ({ posts }) => {
-// const posts2 = useSelector((state: RootState) => state.postsSlice.post);
-// console.log(posts2)
-
-// const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
-// const { userposts } = usePost() 
-// useEffect(() => {
-//   let id = parseInt(window.location.search.split('?')[1])
-//  userposts(id);
-// }, [])
 
   return (
     <Container className='p-0'>

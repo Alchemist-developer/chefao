@@ -8,32 +8,15 @@ import { RootState } from "../../store";
 import { renderPostsById } from '../../services/posts';
 import { useEffect, useState } from "react";
 
+interface ProfileFeedProps {
+  posts: Post[];
+}
 
-const ProfileFeed: React.FC = () => {
-  let id = parseInt(window.location.search.split('?')[1])
-
-    const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
-    
-    useEffect(() => {
-      let listById = async () =>  {
-       await renderPostsById(id).then(posts => setPostListByID(posts))
-      }
-      listById()
-    })
-    console.log(postListById)
-
-    
-
-// const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
-// const { userposts } = usePost() 
-// useEffect(() => {
-//   let id = parseInt(window.location.search.split('?')[1])
-//  userposts(id);
-// }, [])
-
+const ProfileFeed: React.FC<ProfileFeedProps> = ({posts}) => {
+ 
   return (
     <Container className='p-0'>
-      {postListById.map((post) => (
+      {posts.map((post) => (
         <div className="containerPostFeed">
           <div className="postFeed">
             <img src={Icon} alt="" />

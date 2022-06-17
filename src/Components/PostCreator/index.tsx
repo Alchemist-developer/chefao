@@ -4,12 +4,17 @@ import "./style.css";
 import Icon from "/src/assets/icon.jpeg";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import { createPost } from "../../services/posts";
+import { createPost, renderPosts } from "../../services/posts";
 import { addNewPost } from "../../store/post";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
 
-const PostCreator: React.FC = () => {
+interface PostCreatorProps {
+  atualizarFeed: any
+}
+
+
+const PostCreator: React.FC<PostCreatorProps> = ({atualizarFeed}) => {
   const id = useSelector((state: RootState) => state.usersSlice.id) as number;
   const nome = useSelector((state: RootState) => state.usersSlice.nome) as string;
   const email = useSelector((state: RootState) => state.usersSlice.email) as string;
@@ -27,8 +32,10 @@ const PostCreator: React.FC = () => {
       user_id: ''
     },
     onSubmit: async values => {
-      const data = await createPost({ ...values, user_id: id, user_apartamento: apartamento, user_email: email, user_imagem: imagem, user_nome: nome });
-      dispatch(addNewPost({ post: data }));
+      const data = await createPost({...values, user_id: id, user_apartamento: apartamento, user_email: email, user_imagem: imagem, user_nome: nome });
+      const posts = await renderPosts()
+      atualizarFeed(posts)
+      dispatch(addNewPost({post: data}));
       formik.resetForm();
     }
   })
@@ -36,7 +43,7 @@ const PostCreator: React.FC = () => {
   return (
     <div className="containerPostCreator">
       <div className="postCreator">
-        <a href="/profile"><img src={Icon} alt="" /></a>
+        <a href={`/profile/?${parseInt(window.location.search.split('?')[1])}`}><img src={Icon} alt="" /></a>
         <form onSubmit={formik.handleSubmit}>
           <textarea className="post-area" id="comentario" placeholder="Deixe aqui seu comentário" value={formik.values.comentario} onChange={formik.handleChange}></textarea>
           <div className="between">
