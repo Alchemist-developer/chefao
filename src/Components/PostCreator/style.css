@@ -6,10 +6,10 @@ div {
 
 div.containerPostCreator {
     display: flex;
-    
+
     flex-direction: row;
     align-items: center;
-    box-shadow:  0px 13px 21px 0px rgba(111, 111, 111, 0.192);
+    box-shadow: 0px 13px 21px 0px rgba(111, 111, 111, 0.192);
     min-height: 35%;
     max-height: 35%;
     font-weight: bold;
@@ -42,7 +42,7 @@ div.postCreator img:hover {
 form {
     display: flex;
     flex-direction: column;
-    align-items:flex-end;
+    align-items: flex-end;
     gap: 15px;
 }
 
@@ -55,19 +55,45 @@ textarea {
 }
 
 .button {
-    background-color: #6033AA !important;
-    padding: 4px 53px;
+    background-color: #6133aace !important;
+    padding: 5px 53px;
     color: white !important;
     border: transparent;
     border-radius: 25px !important;
-    transition: 0.1s ease-in-out !important;
+    transition: 0.2s ease-in-out !important;
     font-weight: 100 !important;
 }
 
-.button:hover {
-    background-color: #6033AA !important;
+div.between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+button.perfil {
+    background-color: #6133aace !important;
+    padding: 5px 27px;
     color: white !important;
-   margin-right: 13px !important;
+    border: transparent;
+    border-radius: 25px !important;
+    transition: 0.2s ease-in-out !important;
+    font-weight: 100 !important;    
+}
+
+button.perfil:hover {
+    background-color: #6133aa53 !important;
+    color: rgb(254, 254, 254) !important;
+    font-weight: 100 !important;
+    border-radius: 25px !important;
+}
+
+.button:hover {
+    background-color: #6133aa88 !important;
+    color: rgb(255, 255, 255) !important;
+    margin-bottom: 10px !important;
     font-weight: 100 !important;
     border-radius: 25px !important;
 }
@@ -75,6 +101,5 @@ textarea {
 @media screen and (max-width: 555px) {
     form textarea {
         width: 444px;
-     }
+    }
 }
-

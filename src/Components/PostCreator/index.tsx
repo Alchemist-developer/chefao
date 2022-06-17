@@ -27,8 +27,8 @@ const PostCreator: React.FC = () => {
       user_id: ''
     },
     onSubmit: async values => {
-      const data = await createPost({...values, user_id: id, user_apartamento: apartamento, user_email: email, user_imagem: imagem, user_nome: nome });
-      dispatch(addNewPost({post: data}));
+      const data = await createPost({ ...values, user_id: id, user_apartamento: apartamento, user_email: email, user_imagem: imagem, user_nome: nome });
+      dispatch(addNewPost({ post: data }));
       formik.resetForm();
     }
   })
@@ -39,8 +39,12 @@ const PostCreator: React.FC = () => {
         <a href="/profile"><img src={Icon} alt="" /></a>
         <form onSubmit={formik.handleSubmit}>
           <textarea className="post-area" id="comentario" placeholder="Deixe aqui seu comentário" value={formik.values.comentario} onChange={formik.handleChange}></textarea>
-          <button className="button" type="submit">publicar</button>
+          <div className="between">
+            <button className="perfil" type="submit">visualizar perfil</button>
+            <button className="button" type="submit">publicar</button>
+          </div>
         </form>
+
       </div>
     </div>
   );
