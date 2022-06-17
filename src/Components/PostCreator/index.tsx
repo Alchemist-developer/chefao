@@ -36,7 +36,7 @@ const PostCreator: React.FC = () => {
   return (
     <div className="containerPostCreator">
       <div className="postCreator">
-        <img src={Icon} alt="" />
+        <a href="/profile"><img src={Icon} alt="" /></a>
         <form onSubmit={formik.handleSubmit}>
           <textarea className="post-area" id="comentario" placeholder="Deixe aqui seu comentário" value={formik.values.comentario} onChange={formik.handleChange}></textarea>
           <button className="button" type="submit">publicar</button>

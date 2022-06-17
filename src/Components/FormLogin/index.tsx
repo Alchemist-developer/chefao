@@ -37,7 +37,7 @@ const FormLogin: React.FC = () => {
     <div className="background">
         <div className="containerForm">
         <div className="divImage">
-        <img src={Logo} alt="" />
+        <img className="ocult-img" src={Logo} alt="" />
         </div>
         <h3>LOGIN</h3>
         <Form className="form" onSubmit={formik.handleSubmit}>

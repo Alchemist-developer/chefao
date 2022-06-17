@@ -5,6 +5,11 @@ export const SpanNavbar = styled.span`
   font-size: 24px;
   color: #76bb4c;
   border-right: 2px solid #76bb4c;
+  @media (max-width: 768px) {
+    box-shadow: none;
+    border: none;
+    display: none;
+  }
 `;
 
 export const LinkNavbar = styled.span`
@@ -13,6 +18,11 @@ export const LinkNavbar = styled.span`
   color: #6033aa;
   cursor: pointer;
   display: inline-block;
+  @media (max-width: 538px) {
+    box-shadow: none;
+    border: none;
+    display: none;
+  }
 `;
 
 export const NavbarComponent = styled(Navbar)`
@@ -20,4 +30,8 @@ export const NavbarComponent = styled(Navbar)`
   height: 86px;
   padding: 0;
   margin: 0;
+  @media (max-width: 768px) {
+    box-shadow: none;
+    border: none;
+  }
 `;
