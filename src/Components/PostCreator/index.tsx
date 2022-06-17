@@ -47,7 +47,7 @@ const PostCreator: React.FC<PostCreatorProps> = ({atualizarFeed}) => {
         <form onSubmit={formik.handleSubmit}>
           <textarea className="post-area" id="comentario" placeholder="Deixe aqui seu comentário" value={formik.values.comentario} onChange={formik.handleChange}></textarea>
           <div className="between">
-            <button className="perfil" type="submit">visualizar perfil</button>
+            <a className="perfil" href={`/profile/?${parseInt(window.location.search.split('?')[1])}`}>visualizar perfil</a>
             <button className="button" type="submit">publicar</button>
           </div>
         </form>
