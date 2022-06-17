@@ -4,6 +4,14 @@ div {
     font-family: 'Questrial', sans-serif;
 }
 
+
+@media screen and (max-width:502px) {
+    img.ocult-img {
+        display: none;
+     }
+}
+
+
 .background {
     width: 100vw;
     height: 100vh;
