@@ -48,9 +48,9 @@ const FormRegister: React.FC = () => {
     <div className="background">
       <div className="containerForm">
         <div className="divImage">
-          <img src={Logo} alt="" />
+          <img className="ocult-img" src={Logo} alt="" />
         </div>
-        <h3>CADASTRO</h3>
+        <h3 className="media">CADASTRO</h3>
         <Form className="form" onSubmit={formik.handleSubmit}>
           <Form.Group className="mb-1">
             <Form.Control id="nome" type="text" placeholder="nome" value={formik.values.nome} onChange={formik.handleChange} isInvalid={formik.touched.nome && !!formik.errors.nome} isValid={formik.touched.nome && !formik.errors.nome} />

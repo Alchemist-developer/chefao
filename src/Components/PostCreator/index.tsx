@@ -43,11 +43,15 @@ const PostCreator: React.FC<PostCreatorProps> = ({atualizarFeed}) => {
   return (
     <div className="containerPostCreator">
       <div className="postCreator">
-        <a href={`/profile/?${parseInt(window.location.search.split('?')[1])}`}><img src={Icon} alt="" /></a>
+        <a href={`/profile/?${parseInt(window.location.search.split('?')[1])}`}><img src={Icon} alt="imagem do usuario" /></a>
         <form onSubmit={formik.handleSubmit}>
           <textarea className="post-area" id="comentario" placeholder="Deixe aqui seu comentário" value={formik.values.comentario} onChange={formik.handleChange}></textarea>
-          <button className="button" type="submit">publicar</button>
+          <div className="between">
+            <a className="perfil" href={`/profile/?${parseInt(window.location.search.split('?')[1])}`}>visualizar perfil</a>
+            <button className="button" type="submit">publicar</button>
+          </div>
         </form>
+
       </div>
     </div>
   );
