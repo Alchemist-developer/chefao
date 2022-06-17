@@ -22,7 +22,7 @@ function PublicFeed(): JSX.Element {
         }
         getPosts();
     }, [])
-
+    
   return (
   <div>
   <Navbar />

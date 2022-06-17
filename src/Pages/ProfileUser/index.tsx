@@ -6,24 +6,26 @@ import ProfileData from '../../Components/ProfileData';
 import PostFeed from '../../Components/PostFeed';
 import ProfileFeed from '../../Components/ProfileFeed';
 import { Post } from '../../types';
-import { renderPostsById } from '../../services/posts';
+import { renderPosts, renderPostsById } from '../../services/posts';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store';
 
 
 
 function ProfileUser(): JSX.Element {
 
+  const [postList, setPostList] = useState<Post[]>([] as Post[]);
 
-  const [postListByID, setPostListById] = useState<Post[]>([] as Post[]);
+    useEffect(() => {
 
-  useEffect(() => {
+        const getPosts = async () => {
+            const posts = await renderPosts()
+            setPostList(posts)
+        }
+        getPosts();
+    }, [])
 
-      const getPostsById = async () => {
-          const posts = await renderPostsById(parseInt(window.location.search.split('?')[1]))
-          setPostListById(posts)
-      }
-      getPostsById();
-  }, [])
-
+    const postListByID = postList.filter(obj => obj.user_id == parseInt(window.location.search.split('?')[1]))
 
   return (
     <div>
