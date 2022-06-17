@@ -25,6 +25,7 @@ div.postCreator {
 }
 
 div.postCreator img {
+    background-color: #6033AA;
     height: 6rem;
     width: 6rem;
     transition: 2s;
@@ -68,12 +69,13 @@ div.between {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 button.perfil {
-    background-color: #6133aace !important;
+    background-color: #6033AA !important;
     padding: 5px 27px;
     color: white !important;
     border: transparent;

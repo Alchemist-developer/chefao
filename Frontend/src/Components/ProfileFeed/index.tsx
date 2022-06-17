@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Post } from '../../types';
-import Icon from "/src/assets/icon.png";
+import Icon from "/src/assets/icon-user.png";
 import "./style.css"
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
@@ -27,7 +27,7 @@ const ProfileFeed: React.FC<ProfileFeedProps> = ({posts}) => {
             </div>
           </div>
         </div>
-      ))}
+      )).reverse()}
     </Container>
   );
 }
