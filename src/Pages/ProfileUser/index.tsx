@@ -5,6 +5,7 @@ import Navbar from '../../Components/Navbar';
 import ProfileData from '../../Components/ProfileData';
 import PostFeed from '../../Components/PostFeed';
 import {usePost}  from '../../hooks/usePost';
+import ProfileFeed from '../../Components/ProfileFeed';
 
 
 
@@ -17,7 +18,7 @@ function ProfileUser(): JSX.Element {
         <FeedContainer>
           <ProfileData />
           {/* aqui vao os posts do usuario logado - postfeed*/}
-          <PostFeed posts={postList} />
+          <ProfileFeed />
         </FeedContainer>
       </BodyContainer>
     </div>

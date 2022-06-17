@@ -11,6 +11,8 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, postsSlice);
 
+const persistedReducerUsers = persistReducer(persistConfig, usersSlice);
+
 export const store = configureStore({
     reducer: {
         usersSlice,
