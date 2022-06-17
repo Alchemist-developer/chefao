@@ -19,7 +19,7 @@ function PublicFeed(): JSX.Element {
   <BodyContainer>  
  <FeedContainer>
   <PostCreator />
-  <PostFeed posts={postList} />
+  <PostFeed posts={postList}/>
   
  </FeedContainer>
 </BodyContainer>

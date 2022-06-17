@@ -4,111 +4,47 @@
       "id": 1,
       "user_nome": "thais",
       "user_email": "thais@thais.com",
-      "user_apartamento": "506",
-      "comentario": "Olá",
-      "user_id": 1
+      "user_apartamento": "56789",
+      "comentario": "oi",
+      "user_id": 2
     },
     {
       "id": 2,
-      "user_nome": "davi",
-      "user_email": "davi@email.com",
-      "user_apartamento": "hjk",
-      "comentario": "oiii",
-      "user_id": 5
+      "user_nome": "thais",
+      "user_email": "thais@thais.com",
+      "user_apartamento": "56789",
+      "comentario": "oi",
+      "user_id": 2
     },
     {
       "id": 3,
-      "user_nome": "davi",
-      "user_email": "davi@email.com",
-      "user_apartamento": "hjk",
-      "comentario": "teste",
-      "user_id": 5
-    },
-    {
-      "id": 4,
-      "user_nome": "caio",
-      "user_email": "caio@caio.com",
-      "user_apartamento": "12344",
+      "user_nome": "thais",
+      "user_email": "thais@thais.com",
+      "user_apartamento": "56789",
       "comentario": "testando",
-      "user_id": 6
-    },
-    {
-      "id": 5,
-      "user_nome": "davi",
-      "user_email": "davi@email.com",
-      "user_apartamento": "hjk",
-      "comentario": "ultimo",
-      "user_id": 5
-    },
-    {
-      "id": 6,
-      "user_nome": "davi",
-      "user_email": "davi@email.com",
-      "user_apartamento": "hjk",
-      "comentario": ".",
-      "user_id": 5
+      "user_id": 2
     }
   ],
   "users": [
     {
-      "email": "thais@thais.com",
-      "password": "$2a$10$M1ljuiwum3DgN7qzWEqdtenDopL9Qw/Kon.PGOK2tyhNkus4Gsoaq",
-      "nome": "thais",
-      "confirmarSenha": "thais123",
-      "apartamento": "506",
-      "imagem": "fghjk",
+      "email": "nina@nina.com",
+      "password": "$2a$10$f4yV3sU.6thduHFAvsqcc.xjNGWUguCHuzcj11T/zRlWaG2nIA3hm",
+      "nome": "nina",
+      "confirmarSenha": "12345678",
+      "apartamento": "6789",
+      "imagem": "ghjk",
       "permission": 1,
       "id": 1
     },
     {
-      "email": "rita@email.com",
-      "password": "$2a$10$Sx.yJYNmMZPYaL6MiLLG5uYTnrYdAqER0iFWk665zkFfx49aaTSg6",
-      "nome": "rita",
-      "confirmarSenha": "rita12345",
-      "apartamento": "2344",
-      "imagem": "hjk",
+      "email": "thais@thais.com",
+      "password": "$2a$10$wkaEkS7lGDfE4Y5YwDJkxO2b3sECzZDTC/AVjWIrU6UfPtvfu6Ks2",
+      "nome": "thais",
+      "confirmarSenha": "thais123",
+      "apartamento": "56789",
+      "imagem": "ghjkl",
       "permission": 1,
       "id": 2
-    },
-    {
-      "email": "maria@email.com",
-      "password": "$2a$10$BfI28xjMZYrBDtIbykgSJeazsvyVPDLJB3RKnJbFRTwoIfMj.GZYa",
-      "nome": "maria",
-      "confirmarSenha": "maria123",
-      "apartamento": "6789",
-      "imagem": "ghjk",
-      "permission": 1,
-      "id": 3
-    },
-    {
-      "email": "joao@joao.com",
-      "password": "$2a$10$BMoEVFc5pniz17jZnMaPJOBnD2Im8PHGQXw56s/X.85EaN8aG4apO",
-      "nome": "joao",
-      "confirmarSenha": "joao12345",
-      "apartamento": "5678",
-      "imagem": "fghjk",
-      "permission": 1,
-      "id": 4
-    },
-    {
-      "email": "davi@email.com",
-      "password": "$2a$10$GcdRaR3EwR.jnt55sSAE4uiu31F7RL95vd1jOAenyHululJtfgvHy",
-      "nome": "davi",
-      "confirmarSenha": "12345678",
-      "apartamento": "hjk",
-      "imagem": "hm",
-      "permission": 1,
-      "id": 5
-    },
-    {
-      "email": "caio@caio.com",
-      "password": "$2a$10$0si5LsJNfk4s/34J9e5tP.SYJyTCpAdCQ2LZZpYiY8/I8mxbUVoVG",
-      "nome": "caio",
-      "confirmarSenha": "12345678",
-      "apartamento": "12344",
-      "imagem": "jsdn",
-      "permission": 1,
-      "id": 6
     }
   ],
   "signIn": []

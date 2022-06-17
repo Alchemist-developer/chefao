@@ -40,7 +40,6 @@ const FormRegister: React.FC = () => {
       //@ts-ignore
       api.defaults.headers["Authorization"] = `Bearer ${accessToken}`
      
-     
       navigate(`/feed/?${user.id}`)
     }
   })
@@ -64,7 +63,7 @@ const FormRegister: React.FC = () => {
           </Form.Group>
           <Form.Group className="mb-1" >
             <Form.Control id="confirmarSenha" type="password"
-              value={formik.values.confirmarSenha} onChange={formik.handleChange} placeholder="confirmar senha" isInvalid={formik.touched.confirmarSenha && !!formik.errors.confirmarSenha} isValid={formik.touched.confirmarSenha && !formik.errors.confirmarSenha} />
+            placeholder="confirmar senha" value={formik.values.confirmarSenha} onChange={formik.handleChange} isInvalid={formik.touched.confirmarSenha && !!formik.errors.confirmarSenha} isValid={formik.touched.confirmarSenha && !formik.errors.confirmarSenha}/>
           </Form.Group>
           <Form.Group className="mb-1" >
             <Form.Control id="apartamento" type="text" placeholder="unidade/apartamento" value={formik.values.apartamento} onChange={formik.handleChange} isInvalid={formik.touched.apartamento && !!formik.errors.apartamento} isValid={formik.touched.apartamento && !formik.errors.apartamento} />

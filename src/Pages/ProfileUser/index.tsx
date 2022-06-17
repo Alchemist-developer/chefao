@@ -4,7 +4,7 @@ import FeedContainer from '../../components/FeedContainer';
 import Navbar from '../../components/Navbar';
 import ProfileData from '../../components/ProfileData';
 import PostFeed from '../../components/PostFeed';
-import usePost from '../../hooks/usePost';
+import {usePost}  from '../../hooks/usePost';
 
 
 

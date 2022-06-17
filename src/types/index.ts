@@ -15,8 +15,8 @@ export interface SignIn {
 
 export interface User extends SignIn {
     id: number,
+    nome: string,
     password: string,
-    // confirmarSenha: string,
     apartamento: number,
     imagem: string
     permission: Permission

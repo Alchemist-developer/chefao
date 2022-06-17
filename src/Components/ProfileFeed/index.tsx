@@ -15,10 +15,14 @@ const ProfileFeed: React.FC = () => {
     const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
     
     useEffect(() => {
-      renderPostsById(id).then(posts => setPostListByID(posts))
-    }, [])
-
+      let listById = async () =>  {
+       await renderPostsById(id).then(posts => setPostListByID(posts))
+      }
+      listById()
+    })
     console.log(postListById)
+
+    
 
 // const [postListById, setPostListByID] = useState<Post[]>([] as Post[]);
 // const { userposts } = usePost() 
@@ -29,7 +33,7 @@ const ProfileFeed: React.FC = () => {
 
   return (
     <Container className='p-0'>
-      {postListById.map(post => (
+      {postListById.map((post) => (
         <div className="containerPostFeed">
           <div className="postFeed">
             <img src={Icon} alt="" />
@@ -40,7 +44,7 @@ const ProfileFeed: React.FC = () => {
             </div>
           </div>
         </div>
-      )).reverse()}
+      ))}
     </Container>
   );
 }
