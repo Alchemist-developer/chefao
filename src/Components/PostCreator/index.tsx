@@ -29,6 +29,7 @@ const PostCreator: React.FC = () => {
     onSubmit: async values => {
       const data = await createPost({...values, user_id: id, user_apartamento: apartamento, user_email: email, user_imagem: imagem, user_nome: nome });
       dispatch(addNewPost({post: data}));
+      formik.resetForm();
     }
   })
 
