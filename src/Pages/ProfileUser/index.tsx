@@ -1,9 +1,9 @@
 import React from 'react';
-import { BodyContainer } from '../../components/Container/styled';
-import FeedContainer from '../../components/FeedContainer';
-import Navbar from '../../components/Navbar';
-import ProfileData from '../../components/ProfileData';
-import PostFeed from '../../components/PostFeed';
+import { BodyContainer } from '../../Components/Container/styled';
+import FeedContainer from '../../Components/FeedContainer';
+import Navbar from '../../Components/Navbar';
+import ProfileData from '../../Components/ProfileData';
+import PostFeed from '../../Components/PostFeed';
 import {usePost}  from '../../hooks/usePost';
 
 

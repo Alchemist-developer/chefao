@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './Components/Navbar'
 import Routes from './Routes'
 import { Provider } from 'react-redux';
 import { store } from './store';
