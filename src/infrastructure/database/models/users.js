@@ -11,6 +11,7 @@ const Users = db.define (
       type: DataTypes.INTEGER
     },
     name: {
+      allowNull: false,
       type: DataTypes.STRING
     },
     email: {
@@ -32,9 +33,9 @@ const Users = db.define (
       allowNull: false,
       type: DataTypes.DATE
     },
-    userType: {
+    admin: {
       allowNull: false,
-      type: DataTypes.STRING
+      type: DataTypes.BOOLEAN
     }
   },
   {

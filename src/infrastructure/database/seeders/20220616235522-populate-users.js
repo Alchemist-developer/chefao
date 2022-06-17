@@ -10,6 +10,7 @@ for (let i = 0; i < 10; i++) {
       email: faker.internet.email(),
       apartment: faker.random.numeric(),
       password: faker.internet.password(),
+      admin:false,
       createdAt: new Date(),
       updatedAt: new Date()
     }

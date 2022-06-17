@@ -17,7 +17,7 @@ const Posts = db.define (
         model: {
                 tableName:"Users",
         },        
-        key: "idUser"
+        key: "idUsers"
       }
     },
     content: {

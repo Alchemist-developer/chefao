@@ -1,4 +1,7 @@
-'use strict';
+"use strict";
+
+const { DataTypes } = require('sequelize');
+const db = require ('../index');
 
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -7,32 +10,39 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: DataTypes.INTEGER,
       },
       name: {
-        type: Sequelize.STRING(70)
+        allowNull: false,
+        type: DataTypes.STRING,
       },
       email: {
-        type: Sequelize.STRING(70)
+        allowNull: false,
+        type: DataTypes.STRING,
       },
       apartment: {
-        type: Sequelize.INTEGER
+        type: DataTypes.INTEGER,
       },
       password: {
-        type: Sequelize.STRING(150)
+        allowNull: false,
+        type: DataTypes.STRING,
+      },
+      admin: {
+        allowNull: false,
+        type: DataTypes.BOOLEAN
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: DataTypes.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: DataTypes.DATE,
+      },
     });
   },
 
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable("Users");
-  }
+  },
 };
