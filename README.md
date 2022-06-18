@@ -38,13 +38,13 @@ npm install
 npm start
 ```
 
-## Author 👤
+## 👤 Author 
 
-**@Adryel Simon, <br/> @Thais Cavalcante, <br/>@Celio, <br/>@Guilherme Zonca**
+**@Adryel Simon**
 
 ## 🤝 Contributing
 
-**@Thais Cavalcante, <br/>@Celio, <br/>@Guilherme Zonca**
+**@thaispsc, <br/>@csz8, <br/>@guilhermezb**
 
 ## Show your support
 
