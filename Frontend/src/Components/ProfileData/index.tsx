@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { User } from '../../types';
 import './style.css'
-import Icon from '/src/assets/icon.jpeg'
+import Icon from '/src/assets/icon-user.png'
 
 interface ProfileDataProps {
     user: User[];
