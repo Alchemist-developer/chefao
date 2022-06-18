@@ -44,7 +44,7 @@ npm start
 
 ## 🤝 Contributing
 
-**@thaispsc, <br/>@csz8, <br/>@guilhermezb**
+**Thais Cavalcante | @thaispsc <br/>Célio Soares | @csz8 <br/>Guilherme Zonca | @guilhermezb**
 
 ## Show your support
 
