@@ -2,275 +2,111 @@
   "posts": [
     {
       "id": 1,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "oi",
-      "user_id": 2
+      "user_nome": "Ana Paula Ribeio",
+      "user_email": "anapaulap@gmail.com",
+      "user_apartamento": "1203",
+      "comentario": "Quando será a próxima reunião de condomínio?",
+      "user_id": 1
     },
     {
       "id": 2,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "oi",
+      "user_nome": "Jean Nóbrega",
+      "user_email": "jeannobrega@hotmail.com",
+      "user_apartamento": "901",
+      "comentario": "Contratei um personal trainer e quero um parceiro pra fazer treinos semanais e dividir o custo, quem anima? :D",
       "user_id": 2
     },
     {
       "id": 3,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "testando",
-      "user_id": 2
-    },
-    {
-      "id": 4,
-      "user_nome": "vai",
-      "user_email": "vai@vai.com",
-      "user_apartamento": "5678",
-      "comentario": "ggg",
+      "user_nome": "Laís Barreto",
+      "user_email": "laisbarreto@gmail.com",
+      "user_apartamento": "501",
+      "comentario": "AAAAAAA tô fazendo um bolo e esqueci de comprar açucar, rs\n alguém tem um pouco pra me trazer? \nPode até levar uma parte do bolo se  quiser haha",
       "user_id": 3
     },
     {
+      "id": 4,
+      "user_nome": "Renato Araújo",
+      "user_email": "renatoaraujo@gmail.com",
+      "user_apartamento": "102",
+      "comentario": "Poxa galera, vamos respeitar o horário de silêncio! \nTinha alguém usando furadeira 2 HORAS DA MANHÃ!!! ó_ó",
+      "user_id": 4
+    },
+    {
       "id": 5,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "kkk",
-      "user_id": 2
+      "user_nome": "Bruna Fernandes",
+      "user_email": "brunafernandes@gmail.com",
+      "user_apartamento": "303",
+      "comentario": "Alguém teria um secador de cabelo para me emprestar? O meu acabou de queimar :(",
+      "user_id": 5
     },
     {
       "id": 6,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "f",
+      "user_nome": "Jean Nóbrega",
+      "user_email": "jeannobrega@hotmail.com",
+      "user_apartamento": "901",
+      "comentario": "Vocês ainda não entenderam que não se deve estacionar na vaga de garagem do vizinho???",
       "user_id": 2
     },
     {
       "id": 7,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "ddf",
-      "user_id": 2
-    },
-    {
-      "id": 8,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "dsd",
-      "user_id": 2
-    },
-    {
-      "id": 9,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "por favor vai",
-      "user_id": 2
-    },
-    {
-      "id": 10,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "gggg",
-      "user_id": 2
-    },
-    {
-      "id": 11,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "DFFDFF",
-      "user_id": 2
-    },
-    {
-      "id": 12,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "dfdggggffggh",
-      "user_id": 2
-    },
-    {
-      "id": 13,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "smmmndmas",
-      "user_id": 2
-    },
-    {
-      "id": 14,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "kklll",
-      "user_id": 2
-    },
-    {
-      "id": 15,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "djdsff",
-      "user_id": 2
-    },
-    {
-      "id": 16,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "jjkj\n",
-      "user_id": 2
-    },
-    {
-      "id": 17,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "teste",
-      "user_id": 2
-    },
-    {
-      "id": 18,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "jm",
-      "user_id": 2
-    },
-    {
-      "id": 19,
-      "user_nome": "chicho",
-      "user_email": "chico@email.com",
-      "user_apartamento": "47839",
-      "comentario": "ffff",
+      "user_nome": "Renato Araújo",
+      "user_email": "renatoaraujo@gmail.com",
+      "user_apartamento": "102",
+      "comentario": "Alô vizinhos, tudo bem com vocês? Vou fazer uma festinha no sábado ás 18h, espero vocês!",
       "user_id": 4
-    },
-    {
-      "id": 20,
-      "user_nome": "chicho",
-      "user_email": "chico@email.com",
-      "user_apartamento": "47839",
-      "comentario": "ffff",
-      "user_id": 4
-    },
-    {
-      "id": 21,
-      "user_nome": "chicho",
-      "user_email": "chico@email.com",
-      "user_apartamento": "47839",
-      "comentario": "dfmgmkgkkdg",
-      "user_id": 4
-    },
-    {
-      "id": 22,
-      "user_nome": "bia",
-      "user_email": "bia@email.com",
-      "user_apartamento": "456789",
-      "comentario": "ksdjkskfjskjfsf",
-      "user_id": 5
-    },
-    {
-      "id": 23,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "ffdfdg",
-      "user_id": 2
-    },
-    {
-      "id": 24,
-      "user_nome": "ziri filho",
-      "user_email": "ziri@filho.com",
-      "user_apartamento": "34567",
-      "comentario": "oiiii",
-      "user_id": 7
-    },
-    {
-      "id": 25,
-      "user_nome": "thais",
-      "user_email": "thais@thais.com",
-      "user_apartamento": "56789",
-      "comentario": "kmdkmdmkd",
-      "user_id": 2
     }
   ],
   "users": [
     {
-      "email": "nina@nina.com",
-      "password": "$2a$10$f4yV3sU.6thduHFAvsqcc.xjNGWUguCHuzcj11T/zRlWaG2nIA3hm",
-      "nome": "nina",
+      "email": "anapaulap@gmail.com",
+      "password": "$2a$10$0v4ouxhgUOuUTD2FDK/k/.gNo22sb/E/tbDmDsl7nuGe5ZZw6vd3q",
+      "nome": "Ana Paula Ribeio",
       "confirmarSenha": "12345678",
-      "apartamento": "6789",
-      "imagem": "ghjk",
+      "apartamento": "1203",
+      "imagem": "fghjk",
       "permission": 1,
       "id": 1
     },
     {
-      "email": "thais@thais.com",
-      "password": "$2a$10$wkaEkS7lGDfE4Y5YwDJkxO2b3sECzZDTC/AVjWIrU6UfPtvfu6Ks2",
-      "nome": "thais",
-      "confirmarSenha": "thais123",
-      "apartamento": "56789",
-      "imagem": "ghjkl",
+      "email": "jeannobrega@hotmail.com",
+      "password": "$2a$10$hR7f9/xP6v4SKFYBTPrs9.Y84Utr32AWqvXGwUeNa.Z0yM/a3s1je",
+      "nome": "Jean Nóbrega",
+      "confirmarSenha": "12345678",
+      "apartamento": "901",
+      "imagem": "dfghj",
       "permission": 1,
       "id": 2
     },
     {
-      "email": "vai@vai.com",
-      "password": "$2a$10$SVLVlFcYvdbT3T4edi5/leFk/X3Xv622m4bRzUnMqC6FJk.zC7s6m",
-      "nome": "vai",
+      "email": "laisbarreto@gmail.com",
+      "password": "$2a$10$4zvMziZ42aw1GXIwiXbRsOel2LCE/2IrSesjI2CFN7MpYz9497jiC",
+      "nome": "Laís Barreto",
       "confirmarSenha": "12345678",
-      "apartamento": "5678",
+      "apartamento": "501",
       "imagem": "ghjk",
       "permission": 1,
       "id": 3
     },
     {
-      "email": "chico@email.com",
-      "password": "$2a$10$Y/1S8Y..HAaod/UZUaTMKu9BiY6q.apB6LagWx3mq8ny.nQ4l3Spm",
-      "nome": "chicho",
+      "email": "renatoaraujo@gmail.com",
+      "password": "$2a$10$If6rdYx.qXKMRT4MoJGlcud9gcATx6F1Ota3vBPPeOV7MwDwUEKMm",
+      "nome": "Renato Araújo",
       "confirmarSenha": "12345678",
-      "apartamento": "47839",
-      "imagem": "hjk",
+      "apartamento": "102",
+      "imagem": "cvhj",
       "permission": 1,
       "id": 4
     },
     {
-      "email": "bia@email.com",
-      "password": "$2a$10$94J01.fS3g1bf38yo5D24erjxDjLahYtzcjbk7tw9IrNWS6jjdG2G",
-      "nome": "bia",
+      "email": "brunafernandes@gmail.com",
+      "password": "$2a$10$dQu/eZuMYKgOnZsgTgQb/Oy9e5F5UNoaOl47XDAbPxcOJBg4K3E3K",
+      "nome": "Bruna Fernandes",
       "confirmarSenha": "12345678",
-      "apartamento": "456789",
-      "imagem": "dfghjk",
+      "apartamento": "303",
+      "imagem": "hjkl",
       "permission": 1,
       "id": 5
-    },
-    {
-      "email": "ziri@ziri.com",
-      "password": "$2a$10$gzHQ7wVUTA/PDmcaWENI3uF1C/9YTfnD1GCvbtojSOKxUb0.HdyFG",
-      "nome": "ziri",
-      "confirmarSenha": "12345678",
-      "apartamento": "3456789",
-      "imagem": "sdfghjk",
-      "permission": 1,
-      "id": 6
-    },
-    {
-      "email": "ziri@filho.com",
-      "password": "$2a$10$P0CSYeouAsotxfEVuNf9EeSSgNny2roPEZWwV0OS3DIfRayBaSTyK",
-      "nome": "ziri filho",
-      "confirmarSenha": "12345678",
-      "apartamento": "34567",
-      "imagem": "dfghj",
-      "permission": 1,
-      "id": 7
     }
   ],
   "signIn": []
