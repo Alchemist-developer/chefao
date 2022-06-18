@@ -107,6 +107,16 @@
       "imagem": "hjkl",
       "permission": 1,
       "id": 5
+    },
+    {
+      "email": "mva@gmail.com",
+      "password": "$2a$10$IwMlext41KetlLKoabNl7eKi26LXSFd4B5lYcpSh1b8McIhsNuG/e",
+      "nome": "Maria Vitória Almeida",
+      "confirmarSenha": "12345678",
+      "apartamento": "402",
+      "imagem": "dfghj",
+      "permission": 1,
+      "id": 6
     }
   ],
   "signIn": []
