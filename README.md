@@ -58,6 +58,6 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [A. Simon](https://github.com/alchemistic-developer)<br /><br />
+Copyright © 2022 [A. Simon](https://github.com/alchemist-developer)<br /><br />
 
 ---
