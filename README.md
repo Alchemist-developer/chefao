@@ -10,7 +10,7 @@
 
 <br/>
 
-> 😋 Neste hands on as stack de front-end e back-end trablharam juntas. Fomos desafiados a criar a Parrot - rede social. Um sistema (White Label) que o condomínios podem contratar para incentivar a interação entre os moradores. 😋 <br/><br/> ReactJS, Redux, React-Bootstrap, Sass, Styled-components, NodeJS, ExpressJS, SQL <br/> 
+> 😋 Neste hands on as stacks de front-end e back-end trablharam juntas. Fomos desafiados a criar a Parrot - rede social. Um sistema (White Label) que o condomínios podem contratar para incentivar a interação entre os moradores. 😋 <br/><br/> ReactJS, Redux, React-Bootstrap, Sass, Styled-components, NodeJS, ExpressJS, SQL <br/> 
 
 <br/>
 
