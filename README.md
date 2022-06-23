@@ -10,7 +10,7 @@
 
 <br/>
 
-> 😋 ReactJS, Redux, React-Bootstrap, Sass, Styled-components, NodeJS, ExpressJS, SQL 😋
+> 😋 Neste hands on as stack de front-end e back-end trablharam juntas. Fomos desafiados a criar a Parrot - rede social. Um sistema (White Label) que o condomínios podem contratar para incentivar a interação entre os moradores. 😋 <br/><br/> ReactJS, Redux, React-Bootstrap, Sass, Styled-components, NodeJS, ExpressJS, SQL <br/> 
 
 <br/>
 
@@ -46,11 +46,11 @@ npm start
 
 ## 👤 Author 
 
-**@Adryel Simon**
+**<a href='https://github.com/alchemist-developer'>Adryel Simon</a> | @alchemist-developer**
 
 ## 🤝 Contributing
 
-**Thais Cavalcante | @thaispsc <br/>Célio Soares | @csz8 <br/>Guilherme Zonca | @guilhermezb**
+**<a href='https://github.com/thaispsc'> Thais Cavalcante <a/> | @thaispsc <br/> <a href='https://github.com/sz8'> Célio Soares </a>| @csz8 <br/><a href='https://github.com/sz8'>Guilherme Zonca <a/>| @guilhermezb**
 
 ## Show your support
 
